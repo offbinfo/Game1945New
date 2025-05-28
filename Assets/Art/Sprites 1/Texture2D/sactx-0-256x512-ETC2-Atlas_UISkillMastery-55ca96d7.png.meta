@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 7e2233c2919a6574ea87ef4650af57be
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 466
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9904140d4995e5a4f8c6e8c606d556e5
+      internalID: 1118636810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 475
+        width: 122
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d249f7d278253ef4e98070e199ae5f7d
+      internalID: -1168662831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 493
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5b8ebd8364b024a993e57addcefd4e
+      internalID: 575138179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 160
+        width: 67
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de58bc94cc2a244ab3179351871ca91
+      internalID: -1484184845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_4
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 487
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ebaef63f5427d4992aa82d3bc4a6d0
+      internalID: 77911294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_5
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 450
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c302958d2dddf61418af8a4a30bc0cf4
+      internalID: -2007530088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_6
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 227
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367cd5af6bcd4af4b90a9a218a5f0fb8
+      internalID: 1917698182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_7
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 256
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968bfab1d68cb9241bc3bdf8ecf007ea
+      internalID: -467679333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 222
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8e62fb2b7df974f90bcb0912f5a06c
+      internalID: -1704849147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 380
+        width: 74
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2222baa9dc4e3374193668859b767771
+      internalID: 1720666859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_10
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 157
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3653d287f393743afcf89b98e46870
+      internalID: -755745620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_11
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 108
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7048c3bfd6877fb41a59475a36869e4a
+      internalID: -834377744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 305
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2763a3ef242644e9afe7576b394ffb
+      internalID: 1377552340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 81
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50114e743bd87314d940140807bb394c
+      internalID: -2004113253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 93
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf743ec53a3dba04ea1d960e7f112093
+      internalID: 111983277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_0: 1118636810
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_1: -1168662831
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_10: -755745620
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_11: -834377744
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_12: 1377552340
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_13: -2004113253
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_14: 111983277
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_2: 575138179
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_3: -1484184845
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_4: 77911294
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_5: -2007530088
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_6: 1917698182
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_7: -467679333
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_8: -1704849147
+      sactx-0-256x512-ETC2-Atlas_UISkillMastery-55ca96d7_9: 1720666859
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

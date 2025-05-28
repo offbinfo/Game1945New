@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696b5019a3f94e74fa249f1120955101, type: 3}
+  m_Name: Ship_2
+  m_EditorClassIdentifier: 
+  shipName: Gurra
+  maxHeath: 50
+  shieldTimeUp: 0
+  powerTimeUp: 1
+  mainDamage: 6
+  mainAttackSpeed: 0.25
+  mainBulletList:
+  - Levels:
+    - Name: Ship_2_MainBullet_1
+      Rot: 0
+  - Levels:
+    - Name: Ship_2_MainBullet_1
+      Rot: -5
+    - Name: Ship_2_MainBullet_1
+      Rot: 5
+  - Levels:
+    - Name: Ship_2_MainBullet_1
+      Rot: 0
+    - Name: Ship_2_MainBullet_1
+      Rot: -5
+    - Name: Ship_2_MainBullet_1
+      Rot: 5
+  - Levels:
+    - Name: Ship_2_MainBullet_1
+      Rot: -4
+    - Name: Ship_2_MainBullet_1
+      Rot: 4
+    - Name: Ship_2_MainBullet_1
+      Rot: -7
+    - Name: Ship_2_MainBullet_1
+      Rot: 7
+  - Levels:
+    - Name: Ship_2_MainBullet_1
+      Rot: 0
+    - Name: Ship_2_MainBullet_1
+      Rot: -4
+    - Name: Ship_2_MainBullet_1
+      Rot: 4
+    - Name: Ship_2_MainBullet_1
+      Rot: -7
+    - Name: Ship_2_MainBullet_1
+      Rot: 7
+  - Levels:
+    - Name: Ship_2_MainBullet_1
+      Rot: -4
+    - Name: Ship_2_MainBullet_1
+      Rot: 4
+    - Name: Ship_2_MainBullet_1
+      Rot: -7
+    - Name: Ship_2_MainBullet_1
+      Rot: 7
+    - Name: Ship_2_MainBullet_1
+      Rot: -10
+    - Name: Ship_2_MainBullet_1
+      Rot: 10
+  - Levels:
+    - Name: Ship_2_MainBullet_1
+      Rot: 0
+    - Name: Ship_2_MainBullet_1
+      Rot: -4
+    - Name: Ship_2_MainBullet_1
+      Rot: 4
+    - Name: Ship_2_MainBullet_1
+      Rot: -7
+    - Name: Ship_2_MainBullet_1
+      Rot: 7
+    - Name: Ship_2_MainBullet_1
+      Rot: -10
+    - Name: Ship_2_MainBullet_1
+      Rot: 10
+  BulletSound: Ship2MainBullet
+  subDamage: 10
+  subAttackSpeed: 2
+  subBulletList:
+  - Levels:
+    - Name: Ship_2_SubBullet_1
+      Rot: 20
+    - Name: Ship_2_SubBullet_1
+      Rot: -20
+  - Levels:
+    - Name: Ship_2_SubBullet_1
+      Rot: 20
+    - Name: Ship_2_SubBullet_1
+      Rot: -20
+    - Name: Ship_2_SubBullet_1
+      Rot: 30
+    - Name: Ship_2_SubBullet_1
+      Rot: -30
+  SubBulletSound: Ship2SubBullet
+  countDownSkill1: 25
+  countDownSkill2: 25
+  isLaserPowerUp: 0

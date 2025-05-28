@@ -1,0 +1,773 @@
+fileFormatVersion: 2
+guid: bada0a64589bbf842b881c4bdf7c4b4f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 492
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3518ce0caca7e6b4f9f6d16a092b5ff5
+      internalID: -1510178530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 499
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178a1a4e1cb9fff4687190b2566570c0
+      internalID: -623438425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 468
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebc5ddaeb1be1f4fb75542cfe18d1b6
+      internalID: -913505921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 499
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c56fdd68a0caa940ad9e26c2d199ec1
+      internalID: 122573791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 256
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a802351483cad479515c452cafd1db
+      internalID: -280578086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_5
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 306
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac22d80c2af9bd4eae77f176774f46e
+      internalID: 136090989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 323
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237e283b79a62f149b23a928d5b1051f
+      internalID: 373292061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_7
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 295
+        width: 77
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22c600ee29dae143a8a97328c24896d
+      internalID: -452758518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 174
+        width: 87
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03b3f16d27337042b8254f893f16713
+      internalID: 783855697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 105
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa5994d9cae2fe4ab4a5dcfa3109226
+      internalID: -1231618067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc250b4c6e308741b6b4e36c355df2b
+      internalID: -793983336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 150
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5df36712f09ca1479347f4fcba4c616
+      internalID: 1636887886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 150
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99dad00710a06f47850526b306243f4
+      internalID: -1870107301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 85
+        width: 100
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df57cec1270ab64cabc8fb59aa81503
+      internalID: -1714945024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_14
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 75
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954f341e0605a694f834f4802e6a238d
+      internalID: 1553232564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_15
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6949165aceebce4186c96453d788413
+      internalID: -699947552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 90
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8b752f2fe963a4dab44fe875ca8737
+      internalID: -1655400103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_17
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 96
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cc4ff7882943b4190126201a2d384f
+      internalID: 980897121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 36
+        width: 44
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6a83fa7cdd4d9498b7a5376a697fa2
+      internalID: 1232537518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea290321d9671046b8174eebcfba222
+      internalID: -1451324360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 12
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09a8c0f95684b546a844364f6107d91
+      internalID: 1043650570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_21
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 50
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3491147dc050d074fb87d52e98e1ac55
+      internalID: 301070617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 87
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d567553fbb5764297342fd05b7cb23
+      internalID: -223485090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_23
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 30
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7995978c331238441997d74dcae44e5a
+      internalID: -506868039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 30
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc5364b4578e784aa8eb8a3a9ba87c1
+      internalID: -1432781330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f047e88894d8c048974c08bcecb01ed
+      internalID: -344981041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324e4e0c23296ff468b9aa9be4118eba
+      internalID: 285584453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 12
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b787fb2600e96bb44944b437883c2bf8
+      internalID: 40387955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_28
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673c687d02f32974494f84c3c0e4de0c
+      internalID: -818954842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_0: -1510178530
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_1: -623438425
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_10: -793983336
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_11: 1636887886
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_12: -1870107301
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_13: -1714945024
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_14: 1553232564
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_15: -699947552
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_16: -1655400103
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_17: 980897121
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_18: 1232537518
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_19: -1451324360
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_2: -913505921
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_20: 1043650570
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_21: 301070617
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_22: -223485090
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_23: -506868039
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_24: -1432781330
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_25: -344981041
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_26: 285584453
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_27: 40387955
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_28: -818954842
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_3: 122573791
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_4: -280578086
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_5: 136090989
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_6: 373292061
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_7: -452758518
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_8: 783855697
+      sactx-0-256x512-ETC2-SA_Devices_Droid_Tier_2-c94de94d_9: -1231618067
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

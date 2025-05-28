@@ -1,0 +1,1169 @@
+fileFormatVersion: 2
+guid: a30cdbb588bbba44abec59cb2c2af798
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 361
+        width: 85
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19af9ebeaa30cdc46b6a06b0954dd779
+      internalID: -2141937216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 360
+        width: 69
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8153e6d0fac4c44bb039f6cfe73b175
+      internalID: -101766583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 498
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1cf0abeda69be4dabac77090025d1c
+      internalID: 599484341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 498
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c526f4e05f05444a23d544b9efde39
+      internalID: -1347190315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 361
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86a614165aab2e4589b20eac4dcbbb4
+      internalID: -1337389236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 498
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6cf5b00dfa2c242b3bd7a87a6d69c5
+      internalID: -2013177237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_6
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 498
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb67d708106e4bf4fac73e6cecb7e15d
+      internalID: 1474891183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_7
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 361
+        width: 99
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64ef2cb8f162c044b9db681170ebe22
+      internalID: -805984290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 474
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42996e5e41bcc74eb498448913160cc
+      internalID: -1018041821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_9
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 474
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef6be5c01e11cd4db8ef04739b91b39
+      internalID: -803219816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_10
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 456
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c4951876a6e8b438c7a7da16a67438
+      internalID: -1615303299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_11
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 426
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ec800b6d8705c439cad81090c5554d
+      internalID: 1660508291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_12
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 426
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985e8da94012a9c489e76a5b35f6eb1d
+      internalID: 70993842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_13
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 420
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfcb484426adb74b8b17624aaf9238f
+      internalID: 1291531172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_14
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 198
+        width: 76
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f067612c10e5b1544aba8022f4fd805c
+      internalID: 1772277929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_15
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 348
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354708e00220a1e41b8978d447dcf230
+      internalID: 733914022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_16
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 348
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8419d1b83b8ae1f428e4800f8c5fe0e4
+      internalID: 1740411633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 336
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbc617b983c05c40b1482239b4e6d3d
+      internalID: -1524230989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_18
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 200
+        width: 60
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96bce5585b58ce41aeb4aa3a322b256
+      internalID: 1033497979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_19
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 200
+        width: 76
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c6bf6bd386fc449b3413d3717dff28
+      internalID: -1999703585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_20
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 342
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53b218948e5a4a4e8cd746ccb250cf7
+      internalID: -1961972110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_21
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 198
+        width: 119
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852152f42801ade40baf12e1b0c2a5ad
+      internalID: 181957137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_22
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24df20af5423226409af7756b3eec6bc
+      internalID: 2070739996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a956db161704c748aaae8c9e705357f
+      internalID: -1602697478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7caa07ba3cc3d664a8d465c4dce9bc1f
+      internalID: -388731769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_25
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 201
+        width: 119
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92343956fae57c54e94578f35b3f1bda
+      internalID: -560268343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_26
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0400c7a00047b4f973082353595a5d
+      internalID: -30919539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_27
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a779bf97d3ce06d488d07be6800fd02d
+      internalID: 1149515975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be9d1f1531bdde4da93cbc1d328f19f
+      internalID: 2029437371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_29
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 180
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b13c792d2a85404a9d4559966434fa5
+      internalID: -1488832991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 180
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009502f2ab7d76a4381e562a165f04a1
+      internalID: 348574172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_31
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 180
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5596a102205ac8a46b350ecaa0e47079
+      internalID: -387395321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_32
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 180
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274a7d0f6dd64a5439186eaf1a374710
+      internalID: -1941378094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_33
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 180
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940866d6dc3137142a03436dd52a5aa7
+      internalID: 1103772079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_34
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 180
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08726bbefae3ebf49b8ac9708812a48f
+      internalID: -1782799590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_35
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 180
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf38f51786e8af4ca2fcc2ddd5582c3
+      internalID: 1027853541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_36
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 180
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec9879c1cf41af44a597d9497b385ba
+      internalID: 1209814119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_37
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 180
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2866f3c8a094b549bf923d5cd60e537
+      internalID: -34726376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_38
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 174
+        width: 60
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d8efc297d6a614fb8c42a3259da3dc
+      internalID: -62596559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_39
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 39
+        width: 125
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2000ee959b37245be1a0c4c78f82a8
+      internalID: 836312300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_40
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 174
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109760950f4cbdd42a1730abd90f4d56
+      internalID: -573312990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_41
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 36
+        width: 103
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eae9e1ee6f89b4ebe2f7ba8a6a9e65
+      internalID: 268552848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_42
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 39
+        width: 79
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2a9890d1813d74c8455137c78eb4af
+      internalID: -1985518329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_43
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 38
+        width: 84
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d015bfb43627c740ab51425c47a0421
+      internalID: -896513246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_44
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 38
+        width: 98
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d2ac9608f636049b81a684752dbfd3
+      internalID: 1745299848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_45
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 39
+        width: 127
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a7fa6b3bba0e84eb99f6a900972230
+      internalID: -725377373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_Player_F4Phantom_Skill_46
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 108
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78719ccbc74ef83409a741e8339fb7d7
+      internalID: 74275676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spine_Player_F4Phantom_Skill_0: -2141937216
+      Spine_Player_F4Phantom_Skill_1: -101766583
+      Spine_Player_F4Phantom_Skill_10: -1615303299
+      Spine_Player_F4Phantom_Skill_11: 1660508291
+      Spine_Player_F4Phantom_Skill_12: 70993842
+      Spine_Player_F4Phantom_Skill_13: 1291531172
+      Spine_Player_F4Phantom_Skill_14: 1772277929
+      Spine_Player_F4Phantom_Skill_15: 733914022
+      Spine_Player_F4Phantom_Skill_16: 1740411633
+      Spine_Player_F4Phantom_Skill_17: -1524230989
+      Spine_Player_F4Phantom_Skill_18: 1033497979
+      Spine_Player_F4Phantom_Skill_19: -1999703585
+      Spine_Player_F4Phantom_Skill_2: 599484341
+      Spine_Player_F4Phantom_Skill_20: -1961972110
+      Spine_Player_F4Phantom_Skill_21: 181957137
+      Spine_Player_F4Phantom_Skill_22: 2070739996
+      Spine_Player_F4Phantom_Skill_23: -1602697478
+      Spine_Player_F4Phantom_Skill_24: -388731769
+      Spine_Player_F4Phantom_Skill_25: -560268343
+      Spine_Player_F4Phantom_Skill_26: -30919539
+      Spine_Player_F4Phantom_Skill_27: 1149515975
+      Spine_Player_F4Phantom_Skill_28: 2029437371
+      Spine_Player_F4Phantom_Skill_29: -1488832991
+      Spine_Player_F4Phantom_Skill_3: -1347190315
+      Spine_Player_F4Phantom_Skill_30: 348574172
+      Spine_Player_F4Phantom_Skill_31: -387395321
+      Spine_Player_F4Phantom_Skill_32: -1941378094
+      Spine_Player_F4Phantom_Skill_33: 1103772079
+      Spine_Player_F4Phantom_Skill_34: -1782799590
+      Spine_Player_F4Phantom_Skill_35: 1027853541
+      Spine_Player_F4Phantom_Skill_36: 1209814119
+      Spine_Player_F4Phantom_Skill_37: -34726376
+      Spine_Player_F4Phantom_Skill_38: -62596559
+      Spine_Player_F4Phantom_Skill_39: 836312300
+      Spine_Player_F4Phantom_Skill_4: -1337389236
+      Spine_Player_F4Phantom_Skill_40: -573312990
+      Spine_Player_F4Phantom_Skill_41: 268552848
+      Spine_Player_F4Phantom_Skill_42: -1985518329
+      Spine_Player_F4Phantom_Skill_43: -896513246
+      Spine_Player_F4Phantom_Skill_44: 1745299848
+      Spine_Player_F4Phantom_Skill_45: -725377373
+      Spine_Player_F4Phantom_Skill_46: 74275676
+      Spine_Player_F4Phantom_Skill_5: -2013177237
+      Spine_Player_F4Phantom_Skill_6: 1474891183
+      Spine_Player_F4Phantom_Skill_7: -805984290
+      Spine_Player_F4Phantom_Skill_8: -1018041821
+      Spine_Player_F4Phantom_Skill_9: -803219816
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

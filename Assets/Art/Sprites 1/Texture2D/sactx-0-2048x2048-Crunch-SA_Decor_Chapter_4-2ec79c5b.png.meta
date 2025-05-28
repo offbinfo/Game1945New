@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: 52a78c52d60d3e645bfb03adc4948151
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1243
+        width: 199
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07378b73b4204c488a59bb97a923f38
+      internalID: 1893469654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_1
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1271
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484fbc657799ba643a82c712efbdde01
+      internalID: 1264764170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1256
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1402f7637e9ef428bdf739cdd6e5a7
+      internalID: -723432442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1242
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05146aa776e16844399714ead9af3132
+      internalID: -167457371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1229
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82eae4ce5c96ced42b32f59928629176
+      internalID: -938501987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1217
+        width: 29
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f89de942ccc2ee40b4d83eac370c79d
+      internalID: 1417817486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1176
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a999331babedf864ebfe01434c47f066
+      internalID: -1524397382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 982
+        width: 127
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0f23f838611214696c7f3a0356fc7e
+      internalID: 563034950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1165
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a71b53ece362bb44bbb5d8c668606be
+      internalID: -1482063243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1108
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c7c16726d0e324a84e4f88ae92a891
+      internalID: -1168540166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947f6c6b41d173849bf98a0150e3bce5
+      internalID: -1052137855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 420
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6481be698b20454db76f12309653d75
+      internalID: 909669129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_12
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 774
+        width: 71
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a984985fc075cf4a883aebdcaca6d58
+      internalID: -1728010282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_13
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 689
+        width: 167
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec818b4c57b217448d126c0ff7c4815
+      internalID: -1848256911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_14
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 717
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903e101f364257a479d6e1c4d64d8dcf
+      internalID: -158078312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_15
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 597
+        width: 116
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3f6515131a3d243b9fef23d1173c8b
+      internalID: 1237352779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_16
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 654
+        width: 102
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34c58943971d824faa20b7c22354f85
+      internalID: 1452724373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_17
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 619
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709421445fe297743851d3297436769d
+      internalID: 1242539030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_18
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 212
+        width: 231
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b09e267f6477e44a4050c20ba8417d
+      internalID: -832051216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_19
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 560
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1c66ff269f6414f806699c58cdd18a
+      internalID: -1567037406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_20
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 148
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466bbd45b62afc44a8f8ae10f6fc2d4a
+      internalID: -1540581174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_21
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 83
+        width: 118
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc7e06ac541e504a9715174740b9f2b
+      internalID: 1141585457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_22
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 73
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a921cedc7754740af196e42f868555
+      internalID: 1679278299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_23
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 3
+        width: 100
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433316379b921674cb92d13cd327ef7b
+      internalID: -1928722372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_24
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfd2fb0d1f7ff24ba2385bdbdc5076e
+      internalID: -787131039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_25
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 420
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f4365fbea30554482a9e21a67e9520
+      internalID: -431957928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_26
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 3
+        width: 420
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3da6fea899ea8145b5368c0b8e11c28
+      internalID: -2033045933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_27
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 0
+        width: 420
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3faba715581d7824cb274186a8c1a436
+      internalID: 1554192404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_0: 1893469654
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_1: 1264764170
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_10: -1052137855
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_11: 909669129
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_12: -1728010282
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_13: -1848256911
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_14: -158078312
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_15: 1237352779
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_16: 1452724373
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_17: 1242539030
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_18: -832051216
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_19: -1567037406
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_2: -723432442
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_20: -1540581174
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_21: 1141585457
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_22: 1679278299
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_23: -1928722372
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_24: -787131039
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_25: -431957928
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_26: -2033045933
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_27: 1554192404
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_3: -167457371
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_4: -938501987
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_5: 1417817486
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_6: -1524397382
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_7: 563034950
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_8: -1482063243
+      sactx-0-2048x2048-Crunch-SA_Decor_Chapter_4-2ec79c5b_9: -1168540166
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

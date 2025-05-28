@@ -1,0 +1,443 @@
+fileFormatVersion: 2
+guid: a45a73651c9c0fd4c9d239e00b94a2ff
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 224
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952d778790edc0147b9279d2769d1c0f
+      internalID: -1447353656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_1
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 170
+        width: 83
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66a5872f592172469e03426c69d76e9
+      internalID: -139658895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 162
+        width: 4
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b99eb3dcc0ae04b95401d9aecc6f69
+      internalID: 1275868637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 168
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a01823cd88ebd64db81d6c8a7ba687c
+      internalID: -1265802186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_4
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 114
+        width: 70
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2707052da1fadf444984d50aa3eaf993
+      internalID: 593985806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_5
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 159
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b041b443e1e51d47b73da74e08e64de
+      internalID: -1863673138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 179
+        width: 56
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addff28348ecbda4ea7516c2fd89727d
+      internalID: 1617561775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 191
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 6.9933014, y: 1.9373505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586a7508e1619864eb4287422911d327
+      internalID: 1352031515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_8
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 117
+        width: 77
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aab39c13cbd4cf4d993fb1cc2d9fc84
+      internalID: -1466201141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_9
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 175
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fc262f466ed1f499432a66c977f0d8
+      internalID: -2030811700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_10
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 174
+        height: 167
+      alignment: 9
+      pivot: {x: 0.51521707, y: 0.49546996}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbc72e1b72ee4041a46e47c68a4d628
+      internalID: -851760705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_11
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 89
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5de71efc34c82147aad38e875afab51
+      internalID: 1473454428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_12
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 81
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec48a45f0a390724192260619e5abd7b
+      internalID: 613075562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_13
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 0
+        width: 107
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7e9623814b3ed48a37af722b5cf64f
+      internalID: -1958021285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_0: -1447353656
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_1: -139658895
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_10: -851760705
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_11: 1473454428
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_12: 613075562
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_13: -1958021285
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_2: 1275868637
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_3: -1265802186
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_4: 593985806
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_5: -1863673138
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_6: 1617561775
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_7: 1352031515
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_8: -1466201141
+      sactx-0-512x256-ETC2-SA_InGame_MiniBoss_Helicopter_1-0ecc5e37_9: -2030811700
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

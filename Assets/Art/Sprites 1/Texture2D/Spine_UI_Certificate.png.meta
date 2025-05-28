@@ -1,0 +1,1939 @@
+fileFormatVersion: 2
+guid: 93f9a9561d6c61c44b9b143c9c14be8f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 816
+        width: 358
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645001c2070d2b3429b87a52bc32fdb8
+      internalID: 1822468911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 976
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2bd5faccae83f439d1c475fbcc2fc2
+      internalID: -1306046149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_2
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 976
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0d0750b47c1544f93acca3c1257929
+      internalID: -267600223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 976
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51efe4dfbcacc0548a3995a3ff5c364b
+      internalID: -400361459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_4
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 976
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae8d77723a16f1438eaf9ff6bcb5679
+      internalID: -930080895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_5
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 976
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61c7191a00052d4da255e05dc0661de
+      internalID: -499634991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_6
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 976
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5460cc6a40c684284eb992ab66279d
+      internalID: -789868745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 976
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d54d9fafece01246bb791800a06cf5e
+      internalID: -1179310865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_8
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 976
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e249a5c6b769734b97ef32fe31f5281
+      internalID: 1653214629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_9
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 976
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b16b38abda5e134f8c081d07ab3dfbb
+      internalID: 1628189428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_10
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 976
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b81c538f00f1504fbc26fb36f77008c
+      internalID: -515013681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_11
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 976
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a698e635d73fd45b283057a88f9dbf
+      internalID: 1632780705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_12
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 958
+        width: 73
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19f0f249e92fc04d9ce50ac0c0006e8
+      internalID: -383405978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_13
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 958
+        width: 76
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c19a730ceb9e1049b21939d82334892
+      internalID: 633082149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_14
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 958
+        width: 73
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facc79d2a7cedfb40adef3212eec28e4
+      internalID: -1310468541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_15
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 955
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30286489cb734414c97d89723204fe74
+      internalID: -1301939004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_16
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 954
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b91332b544dce4ea21a19e5f87b131
+      internalID: 754103572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_17
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 822
+        width: 4
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c93b57151169148aaa746cfb8e4528
+      internalID: 1446140906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_18
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 773
+        width: 165
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882355d969dae4b4ab947292e65e2731
+      internalID: -961548478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_19
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 966
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6592cd699415ad34aa89d12d3374765d
+      internalID: -576019266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_20
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 938
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4981b76fa937aa24790e1988447daef3
+      internalID: -953599719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_21
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 790
+        width: 201
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f631774f2b52ef44bb392b7e7a91d02d
+      internalID: -431116663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_22
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 891
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6db6dec9a34ac4eae16ca1569f49fe
+      internalID: 1659738514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_23
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 902
+        width: 73
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1fcee039cbefc488fd168a7e0ed560
+      internalID: 877277194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_24
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 902
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbcf3efd6adbe649965d0f42bffcee6
+      internalID: -1196929833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_25
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 922
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cc82d694ea35440aca1df851466b05
+      internalID: -859772415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_26
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 922
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faca8aea563592e49b2ffe55aed737b7
+      internalID: -1272321055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_27
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 888
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6af11d91e544546b5097dd3314beaa
+      internalID: 855511000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_28
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 835
+        width: 73
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49222ab8851cd76438d0ffa38153f9ed
+      internalID: -48097157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_29
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 888
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d92bfd762330b547b4a6f3fc995edff
+      internalID: 1152976929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_30
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 889
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0373539c957fa8947874566bac2747fc
+      internalID: 2115302176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_31
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 889
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05084ede88d39514f98731130a94bbf0
+      internalID: -946326053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_32
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 824
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53b5a6787eaf8445ba287566abbcb2d
+      internalID: -558761651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_33
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 825
+        width: 73
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d422affac8ee546b18d66f9644b3bd
+      internalID: -1976059248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_34
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 758
+        width: 63
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d068081efad8cb439b14aab2566dfe0
+      internalID: -1571212565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_35
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 810
+        width: 4
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee8240102eb7984a8e0a23c37200744
+      internalID: -41825281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_36
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 812
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2186223658e28a94da02f135dd2b647c
+      internalID: 640008171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_37
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 547
+        width: 338
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3f0f3082426cc4e9c549e991495c1d
+      internalID: -634907677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_38
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 758
+        width: 73
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192d31beba6fe5f4887267adb455dd82
+      internalID: -1371716939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_39
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 810
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18db1a6a8b9e50e4c9c9d7bfb2822184
+      internalID: -1879139870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_40
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 774
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7223cd5648840c4499398653043d9d95
+      internalID: 771442594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_41
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 632
+        width: 193
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bf82ddce19664489494d2745c090f1
+      internalID: 1550883414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_42
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 735
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6742c821f0080d4796fb0ade9bd970b
+      internalID: -1685951779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_43
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 606
+        width: 202
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e2eebfec726be4d82189d4219288c7
+      internalID: 1244856032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_44
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 581
+        width: 111
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c69f0a57db386e48912ea62036c245e
+      internalID: -2006288950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_45
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 658
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d054ad0d01972d46bd0f0d52ea22992
+      internalID: -1231355612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_46
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 732
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce01ee9cfae0834e8fd9efc7b10f45b
+      internalID: -404675676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_47
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 721
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3805aeb11658e284199281ee7b0913b8
+      internalID: -225599580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_48
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 703
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299c6892741408140a60b81b9dd11092
+      internalID: 320216588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_49
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 684
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb9ccd4c8cfd5a438d2476a835e4fb9
+      internalID: -2075391359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_50
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 693
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef72eeadf641cf40bbf381898260cb4
+      internalID: -1742952986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_51
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 674
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7da2a1b56fe3443a07942ee42a41ee
+      internalID: -1858728905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_52
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 687
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eab18a29bc715543b3fbdd329b6b449
+      internalID: 994917895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_53
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 667
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b37497930a8adf4e9de1b44e90536e4
+      internalID: 491560595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_54
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 651
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abef2666798a054bb29507316736f8b
+      internalID: 948915339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_55
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 658
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c674054a22c3ebd4083b9b858adccb03
+      internalID: 1992011046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_56
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 646
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b195d2f2ec68354a9b64dde11e26f70
+      internalID: -1946470952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_57
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 581
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f9fa8c0bf922f4f92e0edc570930ad
+      internalID: 1041990242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_58
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 603
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ba63fc7e802df498501dbc251c908f
+      internalID: 428844588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_59
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 636
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d303bfeb341e8c146bd0182ba8a7efc3
+      internalID: 1695263966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_60
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 274
+        width: 342
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230cad6f818d0e1438987fdcd78c70d3
+      internalID: -1952050392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_61
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 584
+        width: 14
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993d516ba17f61c4ca680f7ef65eaa5f
+      internalID: 323191324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_62
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 598
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b44039bf68cf4408e847afb2324f15
+      internalID: 1523808930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_63
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 605
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0fce8a149a4de43b45f09859beb05e
+      internalID: 1528489204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_64
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 562
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803840f92374c1d43b6c6cc83de464f0
+      internalID: 1167656702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_65
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 599
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48aa047edf3d1704191d2c3e8fd2e2ea
+      internalID: -585617236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_66
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 594
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63ab2baafebe14498565e6002c780c6
+      internalID: 202375889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_67
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 588
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e0edc3adfffc54fa761993a89a8ea1
+      internalID: 106297027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_68
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 534
+        width: 14
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e389e62f0dc0574e8c815ea31235472
+      internalID: -1055399590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_69
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 579
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdd28c8e42c0984a8437dd2e8af6caf
+      internalID: -1342376499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_70
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 568
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fdaa154ad8b7b46b317d2a7bc91213
+      internalID: 1962571001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_71
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 571
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2ad94c1dd0a6e4db1fca034a7c3b7a
+      internalID: -230149341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_72
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 534
+        width: 94
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b042810097ba9184591a2761da2fdd1d
+      internalID: 872954946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_73
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 551
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d172ae020d1f014f95fe9781a62dce8
+      internalID: -621535319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_74
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 565
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5abd4a1fa2c134a9a29199023c93cb
+      internalID: 402148999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_75
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 553
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec6b408bfa47f841a9f885e95b79090
+      internalID: -1883143498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_76
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 542
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff6663cce2a143458f128befbd855e5
+      internalID: -1672150562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_77
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 357
+        width: 111
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b302615484ab94c89c9cb49f08029e
+      internalID: 1213041464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_78
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 204
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502a6bdd1ddca7e4ebc9dc6050f6638e
+      internalID: -921150061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_79
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 180
+        width: 112
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9108c98a07d696244bf1f28903ae79af
+      internalID: 1541830129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_80
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 2
+        width: 208
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba48b93c1dd3d24ba40a70045344c0d
+      internalID: -1406263091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spine_UI_Certificate_81
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 3
+        width: 112
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc451bce72527504fa5198a0a8fc71e5
+      internalID: -959982246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spine_UI_Certificate_0: 1822468911
+      Spine_UI_Certificate_1: -1306046149
+      Spine_UI_Certificate_10: -515013681
+      Spine_UI_Certificate_11: 1632780705
+      Spine_UI_Certificate_12: -383405978
+      Spine_UI_Certificate_13: 633082149
+      Spine_UI_Certificate_14: -1310468541
+      Spine_UI_Certificate_15: -1301939004
+      Spine_UI_Certificate_16: 754103572
+      Spine_UI_Certificate_17: 1446140906
+      Spine_UI_Certificate_18: -961548478
+      Spine_UI_Certificate_19: -576019266
+      Spine_UI_Certificate_2: -267600223
+      Spine_UI_Certificate_20: -953599719
+      Spine_UI_Certificate_21: -431116663
+      Spine_UI_Certificate_22: 1659738514
+      Spine_UI_Certificate_23: 877277194
+      Spine_UI_Certificate_24: -1196929833
+      Spine_UI_Certificate_25: -859772415
+      Spine_UI_Certificate_26: -1272321055
+      Spine_UI_Certificate_27: 855511000
+      Spine_UI_Certificate_28: -48097157
+      Spine_UI_Certificate_29: 1152976929
+      Spine_UI_Certificate_3: -400361459
+      Spine_UI_Certificate_30: 2115302176
+      Spine_UI_Certificate_31: -946326053
+      Spine_UI_Certificate_32: -558761651
+      Spine_UI_Certificate_33: -1976059248
+      Spine_UI_Certificate_34: -1571212565
+      Spine_UI_Certificate_35: -41825281
+      Spine_UI_Certificate_36: 640008171
+      Spine_UI_Certificate_37: -634907677
+      Spine_UI_Certificate_38: -1371716939
+      Spine_UI_Certificate_39: -1879139870
+      Spine_UI_Certificate_4: -930080895
+      Spine_UI_Certificate_40: 771442594
+      Spine_UI_Certificate_41: 1550883414
+      Spine_UI_Certificate_42: -1685951779
+      Spine_UI_Certificate_43: 1244856032
+      Spine_UI_Certificate_44: -2006288950
+      Spine_UI_Certificate_45: -1231355612
+      Spine_UI_Certificate_46: -404675676
+      Spine_UI_Certificate_47: -225599580
+      Spine_UI_Certificate_48: 320216588
+      Spine_UI_Certificate_49: -2075391359
+      Spine_UI_Certificate_5: -499634991
+      Spine_UI_Certificate_50: -1742952986
+      Spine_UI_Certificate_51: -1858728905
+      Spine_UI_Certificate_52: 994917895
+      Spine_UI_Certificate_53: 491560595
+      Spine_UI_Certificate_54: 948915339
+      Spine_UI_Certificate_55: 1992011046
+      Spine_UI_Certificate_56: -1946470952
+      Spine_UI_Certificate_57: 1041990242
+      Spine_UI_Certificate_58: 428844588
+      Spine_UI_Certificate_59: 1695263966
+      Spine_UI_Certificate_6: -789868745
+      Spine_UI_Certificate_60: -1952050392
+      Spine_UI_Certificate_61: 323191324
+      Spine_UI_Certificate_62: 1523808930
+      Spine_UI_Certificate_63: 1528489204
+      Spine_UI_Certificate_64: 1167656702
+      Spine_UI_Certificate_65: -585617236
+      Spine_UI_Certificate_66: 202375889
+      Spine_UI_Certificate_67: 106297027
+      Spine_UI_Certificate_68: -1055399590
+      Spine_UI_Certificate_69: -1342376499
+      Spine_UI_Certificate_7: -1179310865
+      Spine_UI_Certificate_70: 1962571001
+      Spine_UI_Certificate_71: -230149341
+      Spine_UI_Certificate_72: 872954946
+      Spine_UI_Certificate_73: -621535319
+      Spine_UI_Certificate_74: 402148999
+      Spine_UI_Certificate_75: -1883143498
+      Spine_UI_Certificate_76: -1672150562
+      Spine_UI_Certificate_77: 1213041464
+      Spine_UI_Certificate_78: -921150061
+      Spine_UI_Certificate_79: 1541830129
+      Spine_UI_Certificate_8: 1653214629
+      Spine_UI_Certificate_80: -1406263091
+      Spine_UI_Certificate_81: -959982246
+      Spine_UI_Certificate_9: 1628189428
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
