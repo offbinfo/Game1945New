@@ -74,6 +74,7 @@ public enum UiPanelType
     PopupQuestReward,
     PopupTechSystem,
     PopupLose,
+    PopupSelectLevel
 }
 
 public enum EasingType

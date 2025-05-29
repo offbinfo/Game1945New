@@ -19,10 +19,13 @@ public class UIPanel : GameMonoBehaviour
         return UiPanelType.None;
     }
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         if (panelAnimator)
             panelAnimator.Setup(this);
+
+        DebugCustom.LogColor("root " + root);
     }
 
     public virtual void OnAppear()

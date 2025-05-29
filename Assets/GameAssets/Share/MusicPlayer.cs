@@ -18,7 +18,7 @@ public class MusicPlayer : MonoBehaviour
 
     private void OnChangeSongTheme(object obj)
     {
-        AudioPackClip audioPackClip = musicPacks[(TypeSong)GameDatas.IsThemeSongUsing()];
+        AudioPackClip audioPackClip = musicPacks[(TypeSong)GameDatas.IsThemeSongUsing];
         AudioManager.PlayMusicStatic(audioPackClip.name);
     }
 

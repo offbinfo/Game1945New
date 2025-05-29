@@ -56,15 +56,40 @@ public class LevelManager : GameMonoBehaviour
     protected override void Start()
     {
         base.Start();
+
+        SetUpData();
+
         StartLevel();
         EventDispatcher.AddEvent(EventID.OnKillEnemy, OnFinishWave);
     }
 
-    [Button("Test")]
-    public void Test()
+    private void SetUpData()
     {
-        OnFinishWave(null);
+        InstantiateWave("Prefabs/Levels/Level"+ GameDatas.IndexLevel, transform);
     }
+
+    public void InstantiateWave(string path, Transform parent = null)
+    {
+        var prefab = Resources.Load<GameObject>(path);
+        if (prefab == null)
+        {
+            DebugCustom.LogError($"[ResourceLoader] Prefab not found at path: Resources/{path}");
+            return;
+        }
+        LevelWave levelWave = Instantiate(prefab, parent).GetComponent<LevelWave>();
+        levelWave.transform.parent = parent;    
+
+        waves.Clear();
+        waves = levelWave.waves;
+        waveAsteroid = levelWave.waveAsteroid;
+        waveBoss = levelWave.waveBoss;
+    }
+
+    /*    [Button("Test")]
+        public void Test()
+        {
+            OnFinishWave(null);
+        }*/
 
     private void OnFinishWave(object obj)
     {

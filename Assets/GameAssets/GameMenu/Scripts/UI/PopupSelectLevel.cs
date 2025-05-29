@@ -1,10 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ScreenMainMenu : UIPanel, IBoard
+public class PopupSelectLevel : UIPanel, IBoard
 {
 
     protected override void Awake()
@@ -19,7 +18,7 @@ public class ScreenMainMenu : UIPanel, IBoard
 
     public override UiPanelType GetId()
     {
-        return UiPanelType.ScreenMainMenu;
+        return UiPanelType.PopupSelectLevel;
     }
 
     protected override void OnEnable()
@@ -40,12 +39,13 @@ public class ScreenMainMenu : UIPanel, IBoard
 
     private void Init()
     {
-        
+
     }
 
-    public void BtnPlay()
+    public void OnSelectLevel(int indexLevel)
     {
-        Board_UIs.instance.OpenBoard(UiPanelType.PopupSelectLevel);
+        GameDatas.IndexLevel = indexLevel;
+        SceneManager.LoadScene(1);
     }
 
     protected override void RegisterEvent()

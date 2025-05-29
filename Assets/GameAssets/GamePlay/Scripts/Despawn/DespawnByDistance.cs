@@ -4,15 +4,15 @@ using UnityEngine;
 
 public abstract class DespawnByDistance : Despawn
 {
-    [SerializeField] protected float disLimit = 3f;
+    protected float disLimit = 5f;
     [SerializeField] protected float distance = 0f;
+    private bool hasEnteredCamera = false;
 
     protected override bool CanDespawn()
     {
-        Vector3 caremaPos = GameCtrl.Instance.MainCamera.transform.position;
-        caremaPos.z = 0;
-        this.distance = Vector3.Distance(transform.position, caremaPos);
-        if (this.distance > this.disLimit) return true;
-        return false;   
+        var camPos = (Vector2)GameCtrl.Instance.MainCamera.transform.position;
+        var objPos = (Vector2)transform.position;
+        distance = Vector2.Distance(objPos, camPos);
+        return distance > disLimit;
     }
 }

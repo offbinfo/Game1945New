@@ -28,9 +28,14 @@ public class FormationWaveManager : GameMonoBehaviour
     public void AsyncFormationWave()
     {
         roomWaves.Clear();
+        roomWaveLongs.Clear();
         for (int i = 0; i < transform.childCount; i++)
         {
             roomWaves.Add(transform.GetChild(i).GetComponent<RoomWave>());
+        }
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            roomWaveLongs.Add(transform.GetChild(i).GetComponent<RoomWaveLong>());
         }
     }
 

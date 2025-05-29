@@ -17,7 +17,7 @@ public class GameManager : GameMonoBehaviour
         instance = this;
     }
 
-    [SerializeField] bool isStartUpDone = false;
+/*    [SerializeField] bool isStartUpDone = false;
     [SerializeField] Transform spawnPos;
     [SerializeField] Transform startPos;
     [SerializeField] Transform endPos;
@@ -72,8 +72,8 @@ public class GameManager : GameMonoBehaviour
     private void Update()
     {
         if (isEndlevelProcess) return;
-/*        CheckOnWinLevel();
-        CheckOnLoseLevel();*/
+*//*        CheckOnWinLevel();
+        CheckOnLoseLevel();*//*
     }
 
     private IEnumerator LoadStartUp()
@@ -117,7 +117,7 @@ public class GameManager : GameMonoBehaviour
             SetShipPlayerMovementAndShooting(currentShipPlayer.gameObject, true);
             LevelManager.Instance.StartLevel();
         }
-    }
+    }*/
 
 /*    public void CheckOnLoseLevel()
     {
@@ -186,7 +186,7 @@ public class GameManager : GameMonoBehaviour
         coint += coin;
     }*/
 
-    public void AddStatBonus()
+/*    public void AddStatBonus()
     {
         PlayerData data = DataLoaderAndSaver.Instance.PlayerData;
         ShipController currentShip = GameCtrl.Instance.CurrentShip.GetComponentInChildren<ShipController>();
@@ -216,6 +216,6 @@ public class GameManager : GameMonoBehaviour
         PowerUpAbility powerUpAbility = currentShip.GetComponentInChildren<PowerUpAbility>();
 
         powerUpAbility.SetBonusTimeExits(poweUpLevel * 0.5f);
-    }
+    }*/
 
 }

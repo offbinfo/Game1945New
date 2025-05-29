@@ -1,4 +1,4 @@
-using DG.Tweening;
+﻿using DG.Tweening;
 using PathCreation;
 using System.Collections;
 using System.Collections.Generic;
@@ -199,13 +199,14 @@ public class WaveLongManager : GameMonoBehaviour
         Vector3 startPoint = path.path.GetPoint(0);
         yield return unit.transform.DOMove(startPoint, 0.5f).SetEase(Ease.InOutSine).WaitForCompletion();
 
-        /*        Vector3 nextPoint = path.path.GetPointAtDistance(0.1f);
-                Vector3 dir = (nextPoint - startPoint).normalized;
-                if (dir.sqrMagnitude > 0f)
-                {
-                    float angleZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-                    unit.eulerAngles = new Vector3(0, 0, angleZ);
-                }*/
+        // Xoay theo hướng ban đầu
+        Vector3 nextPoint = path.path.GetPointAtDistance(0.1f);
+        Vector3 dir = (nextPoint - startPoint).normalized;
+        if (dir.sqrMagnitude > 0f)
+        {
+            float angleZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90f; // offset +90 vì sprite hướng xuống
+            unit.transform.rotation = Quaternion.Euler(0f, 0f, angleZ);
+        }
 
         distanceTravelled[index] = 0f;
 
@@ -215,12 +216,13 @@ public class WaveLongManager : GameMonoBehaviour
             Vector3 pathPos = path.path.GetPointAtDistance(distanceTravelled[index], EndOfPathInstruction.Loop);
             unit.transform.position = pathPos;
 
-            /*            Vector3 forward = path.path.GetDirectionAtDistance(distanceTravelled[index], EndOfPathInstruction.Loop);
-                        if (forward.sqrMagnitude > 0f)
-                        {
-                            float angleZ = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
-                            unit.eulerAngles = new Vector3(0, 0, angleZ);
-                        }*/
+            Vector3 forward = path.path.GetDirectionAtDistance(distanceTravelled[index], EndOfPathInstruction.Loop);
+            if (forward.sqrMagnitude > 0f)
+            {
+                float angleZ = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg + 90f; // offset +90 vì sprite hướng xuống
+                Quaternion targetRotation = Quaternion.Euler(0f, 0f, angleZ);
+                unit.transform.rotation = Quaternion.Lerp(unit.transform.rotation, targetRotation, Time.deltaTime * 10f);
+            }
 
             if (distanceTravelled[index] >= path.path.length)
             {
@@ -237,6 +239,60 @@ public class WaveLongManager : GameMonoBehaviour
             yield return null;
         }
     }
+
+    /*    protected IEnumerator MoveOnPath(Object_Pool unit, PathCreator path)
+        {
+            int index = _spawnedUnits.IndexOf(unit);
+            if (index < 0 || index >= _spawnedUnits.Count)
+                yield break;
+
+            if (path.path.length <= 0)
+            {
+                isFollowPathDone[index] = true;
+                yield break;
+            }
+
+            Vector3 startPoint = path.path.GetPoint(0);
+            yield return unit.transform.DOMove(startPoint, 0.5f).SetEase(Ease.InOutSine).WaitForCompletion();
+
+            *//*        Vector3 nextPoint = path.path.GetPointAtDistance(0.1f);
+                    Vector3 dir = (nextPoint - startPoint).normalized;
+                    if (dir.sqrMagnitude > 0f)
+                    {
+                        float angleZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                        unit.eulerAngles = new Vector3(0, 0, angleZ);
+                    }*//*
+
+            distanceTravelled[index] = 0f;
+
+            while (!isFollowPathDone[index])
+            {
+                distanceTravelled[index] += _unitSpeed * Time.deltaTime;
+                Vector3 pathPos = path.path.GetPointAtDistance(distanceTravelled[index], EndOfPathInstruction.Loop);
+                unit.transform.position = pathPos;
+
+                *//*            Vector3 forward = path.path.GetDirectionAtDistance(distanceTravelled[index], EndOfPathInstruction.Loop);
+                            if (forward.sqrMagnitude > 0f)
+                            {
+                                float angleZ = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
+                                unit.eulerAngles = new Vector3(0, 0, angleZ);
+                            }*//*
+
+                if (distanceTravelled[index] >= path.path.length)
+                {
+                    if (typeSetUpWave == TypeSetUpWave.Loop)
+                    {
+                        distanceTravelled[index] = 0f;
+                    }
+                    else
+                    {
+                        isFollowPathDone[index] = true;
+                    }
+                }
+
+                yield return null;
+            }
+        }*/
 
     protected virtual void CheckOnFormationCompleted()
     {
