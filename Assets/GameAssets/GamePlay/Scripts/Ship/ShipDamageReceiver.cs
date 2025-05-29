@@ -42,6 +42,7 @@ public class ShipDamageReceiver : DamageReceiver
     {
         OnDeadFX();
         Destroy(transform.parent.gameObject);
+        Board_UIs.instance.OpenBoard(UiPanelType.PopupLose);
     }
 
     protected virtual void OnDeadFX()

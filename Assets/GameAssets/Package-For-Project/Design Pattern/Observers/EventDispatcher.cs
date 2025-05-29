@@ -8,6 +8,7 @@ public enum EventID
     None,
 
     OnKillEnemy,
+    OnUpdateWave,
 
     OnChangedSkinTower,
     OnEnemyKilled,

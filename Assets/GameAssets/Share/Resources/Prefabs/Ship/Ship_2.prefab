@@ -619,7 +619,7 @@ MonoBehaviour:
   damage: 1
   damageBonus: 0
   shipShootPoints: []
-  bulletName: no-name
+  bulletName: 0
   bulletNames: []
 --- !u!114 &6186212836650524742
 MonoBehaviour:
@@ -642,7 +642,7 @@ MonoBehaviour:
   damage: 30
   damageBonus: 0
   shipShootPoints: []
-  bulletName: no-name
+  bulletName: 1
   bulletNames: []
 --- !u!1 &6186212836696300051
 GameObject:
@@ -3033,10 +3033,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e691c5729edbc41a505c203f354ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoint: 100
-  baseMaxHealthPoint: 100
+  healthPoint: 1
+  baseMaxHealthPoint: 1
   maxHealthPointBonus: 0
-  maxHealthPoint: 100
+  maxHealthPoint: 1
   sphereCollider: {fileID: 6186212838482558840}
   _rigidbody: {fileID: 6186212838482558727}
   isDead: 0

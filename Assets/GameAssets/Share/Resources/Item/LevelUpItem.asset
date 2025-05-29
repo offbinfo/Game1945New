@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: LevelUpItem
   m_EditorClassIdentifier: 
   itemCode: 3
+  poolTag: 15
   itemName: Level Up Item

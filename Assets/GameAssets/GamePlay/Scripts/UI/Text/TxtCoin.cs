@@ -6,7 +6,7 @@ public class TxtCoin : BaseText
 {
     protected override void UpdateText()
     {
-        //int coin = GameManager.Instance.Coint;
-        //this.SetText(coin.ToString());
+        /*int coin = GameManager.Instance.Coint;
+        this.SetText(coin.ToString());*/
     }
 }

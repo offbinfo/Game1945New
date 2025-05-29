@@ -13,60 +13,60 @@ MonoBehaviour:
   m_Name: Ship_3
   m_EditorClassIdentifier: 
   shipName: Ina
-  maxHeath: 75
+  maxHeath: 1
   shieldTimeUp: 1
   powerTimeUp: 1
   mainDamage: 12
   mainAttackSpeed: 0.2
   mainBulletList:
   - Levels:
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
-    - Name: Ship_3_MainBullet_1
-      Rot: 0
-  - Levels:
-    - Name: Ship_3_MainBullet_1
-      Rot: 0
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
-    - Name: Ship_3_MainBullet_1
+    - Name: 0
       Rot: 0
-    - Name: Ship_3_MainBullet_1
+  - Levels:
+    - Name: 0
+      Rot: 0
+    - Name: 0
+      Rot: 0
+    - Name: 0
       Rot: 0
   BulletSound: Ship3MainBullet
   subDamage: 10
   subAttackSpeed: 2
   subBulletList:
   - Levels:
-    - Name: Ship_3_SubBullet_1
+    - Name: 0
       Rot: 45
-    - Name: Ship_3_SubBullet_1
+    - Name: 0
       Rot: -45
   - Levels:
-    - Name: Ship_3_SubBullet_1
+    - Name: 0
       Rot: 45
-    - Name: Ship_3_SubBullet_1
+    - Name: 0
       Rot: -45
-    - Name: Ship_3_SubBullet_1
+    - Name: 0
       Rot: 60
-    - Name: Ship_3_SubBullet_1
+    - Name: 0
       Rot: -60
   SubBulletSound: Ship3SubBullet
   countDownSkill1: 25

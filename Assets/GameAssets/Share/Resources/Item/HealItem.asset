@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HealItem
   m_EditorClassIdentifier: 
   itemCode: 1
+  poolTag: 14
   itemName: Heal Item
-  dropRate: 0

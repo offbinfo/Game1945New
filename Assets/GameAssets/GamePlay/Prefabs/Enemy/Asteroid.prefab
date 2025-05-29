@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fb2ee1aad4c8a43b4db4a533a4d7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: 18
+  _tag: 34
 --- !u!1 &6533962205307540621
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,3 +530,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disLimit: 3
   distance: 0
+  pool: {fileID: 0}

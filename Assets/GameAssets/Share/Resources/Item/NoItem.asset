@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: NoItem
   m_EditorClassIdentifier: 
   itemCode: 0
+  poolTag: 35
   itemName: no-name

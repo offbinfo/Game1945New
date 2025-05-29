@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: MissileItem
   m_EditorClassIdentifier: 
   itemCode: 4
+  poolTag: 16
   itemName: Missile

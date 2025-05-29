@@ -39,7 +39,7 @@ public class EnemyDamageReceiver : DamageReceiver
         {
             if (UnityEngine.Random.Range(0, 1f) <= dropRate.dropRate)
             {
-                ItemDropSpawner.Instance.DropRandom(dropRate.itemSO.itemCode, dropPos, dropRot);
+                ItemDropSpawner.Instance.DropRandom(dropRate.itemSO.poolTag, dropPos, dropRot);
                 return;
             }
         }

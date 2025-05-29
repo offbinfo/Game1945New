@@ -16,7 +16,7 @@ public class ShipShooting : ShipAbstract
     [SerializeField] protected float damage = 1f;
     [SerializeField] protected float damageBonus = 0f;
     [SerializeField] protected List<Transform> shipShootPoints;
-    [SerializeField] PoolTag bulletName = PoolTag.Bullet_Ship1;
+    [SerializeField] PoolTag bulletName;
 
     protected string bulletSoundName = "no-name";
 
@@ -117,7 +117,7 @@ public class ShipShooting : ShipAbstract
         {
             Vector3 spawnPos = shootPoint.position;
             Quaternion rotation = Quaternion.Euler(shootPoint.rotation.eulerAngles.x, shootPoint.rotation.eulerAngles.y, shipPointInfo[count].Rot);
-            PoolTag bulletName = PoolTag.Bullet_Ship1/*shipPointInfo[count].Name*/;
+            PoolTag bulletName = shipPointInfo[count].Name;
 
             Object_Pool newBullet = BulletSpawner.Instance.Spawn(bulletName, spawnPos, rotation);
             if (newBullet == null) return;

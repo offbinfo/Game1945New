@@ -13,44 +13,44 @@ MonoBehaviour:
   m_Name: Ship_4
   m_EditorClassIdentifier: 
   shipName: Phuc
-  maxHeath: 125
+  maxHeath: 1
   shieldTimeUp: 2
   powerTimeUp: 1
   mainDamage: 2
   mainAttackSpeed: 0.15
   mainBulletList:
   - Levels:
-    - Name: Laser
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Laser
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Laser
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Laser
+    - Name: 0
       Rot: 0
-    - Name: Laser
-      Rot: 0
-  - Levels:
-    - Name: Laser
-      Rot: 0
-    - Name: Laser
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Laser
+    - Name: 0
       Rot: 0
-    - Name: Laser
-      Rot: 0
-    - Name: Laser
+    - Name: 0
       Rot: 0
   - Levels:
-    - Name: Laser
+    - Name: 0
       Rot: 0
-    - Name: Laser
+    - Name: 0
       Rot: 0
-    - Name: Laser
+    - Name: 0
+      Rot: 0
+  - Levels:
+    - Name: 0
+      Rot: 0
+    - Name: 0
+      Rot: 0
+    - Name: 0
       Rot: 0
   BulletSound: Ship4MainBullet
   subDamage: 1
@@ -58,9 +58,9 @@ MonoBehaviour:
   subBulletList:
   - Levels: []
   - Levels:
-    - Name: Laser
+    - Name: 0
       Rot: 45
-    - Name: Laser
+    - Name: 0
       Rot: -45
   SubBulletSound: Ship4SubBullet
   countDownSkill1: 25

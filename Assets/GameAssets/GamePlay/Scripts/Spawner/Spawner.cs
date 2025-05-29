@@ -7,14 +7,14 @@ using UnityEngine;
 public class Spawner : GameMonoBehaviour
 {
     [Header("Spawner")]
-    [SerializeField] protected List<Transform> prefabs;
-    [SerializeField] protected List<Transform> poolObjs;
+    [SerializeField] protected List<Object_Pool> prefabs;
+    [SerializeField] protected List<Object_Pool> poolObjs;
     [SerializeField] protected Transform holder;
 
     protected override void LoadComponents()
     {
         base.LoadComponents();
-        this.LoadPrefabs();
+        //this.LoadPrefabs();
         this.LoadHolder();
     }
 
@@ -26,7 +26,7 @@ public class Spawner : GameMonoBehaviour
         Debug.Log(transform.name + ": LoadHolder", gameObject);
     }
 
-    protected virtual void LoadPrefabs()
+/*    protected virtual void LoadPrefabs()
     {
         if (prefabs.Count > 0) return;
         Transform prefabsObj = transform.Find("Prefabs");
@@ -44,12 +44,12 @@ public class Spawner : GameMonoBehaviour
         {
             prefab.gameObject.SetActive(false);
         }
-    }
+    }*/
 
-    public virtual Transform Spawn(string prefabName, Vector3 spawnPos, Quaternion rotation, Transform holder = null)
+    public virtual Object_Pool Spawn(PoolTag prefabName, Vector3 spawnPos, Quaternion rotation, Transform holder = null)
     {
         
-        Transform prefab = this.GetPrefabByName(prefabName);
+        Object_Pool prefab = this.GetPrefabByName(prefabName);
         if (prefab == null)
         {
             Debug.Log("Prefab not found: " + prefab.name);
@@ -60,30 +60,32 @@ public class Spawner : GameMonoBehaviour
     }
 
 
-    public virtual Transform Spawn(Transform prefabs, Vector3 pos, Quaternion rot, Transform holder = null)
+    public virtual Object_Pool Spawn(Object_Pool prefabs, Vector3 pos, Quaternion rot, Transform holder = null)
     {
-        Transform newPrefab = this.GetObjectFromPool(prefabs);
-        newPrefab.SetPositionAndRotation(pos, rot);
+        Object_Pool newPrefab = this.GetObjectFromPool(prefabs);
+        newPrefab.transform.SetPositionAndRotation(pos, rot);
         if (holder != null)
         {
-            newPrefab.parent = holder;
+            newPrefab.transform.parent = holder;
         }
         else
         {
-            newPrefab.parent = this.holder;
+            newPrefab.transform.parent = this.holder;
         }
         return newPrefab;
     }
 
 
-    protected virtual Transform GetPrefabByName(string prefabName)
+    protected virtual Object_Pool GetPrefabByName(PoolTag prefabName)
     {
-        return prefabs.Find(prefab => prefab.name == prefabName);
+        DebugCustom.LogColor("GetPrefabByName "+ prefabName);
+        DebugCustom.LogColor("prefabs " + prefabs.Find(prefab => prefab._tag == prefabName));
+        return prefabs.Find(prefab => prefab._tag == prefabName);
     }
 
-    protected virtual Transform GetObjectFromPool(Transform prefab)
+    protected virtual Object_Pool GetObjectFromPool(Object_Pool prefab)
     {
-        foreach (Transform poolObj in poolObjs)
+        foreach (Object_Pool poolObj in poolObjs)
         {
             if (prefab.name == poolObj.name)
             {
@@ -92,19 +94,19 @@ public class Spawner : GameMonoBehaviour
             }
         }
 
-        Transform newPrefab = Instantiate(prefab);
+        Object_Pool newPrefab = Instantiate(prefab);
         newPrefab.name = prefab.name;
         return newPrefab;
     }
 
 
-    public virtual void Despawn(Transform obj)
+    public virtual void Despawn(Object_Pool obj)
     {
         this.poolObjs.Add(obj);
         obj.gameObject.SetActive(false);
     }
 
-    public virtual bool CheckObjectInPool(Transform prefab)
+    public virtual bool CheckObjectInPool(Object_Pool prefab)
     {
         return poolObjs.Contains(prefab);
     }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PowerUpItem
   m_EditorClassIdentifier: 
   itemCode: 3
+  poolTag: 15
   itemName: Power Up Item
-  dropRate: 0

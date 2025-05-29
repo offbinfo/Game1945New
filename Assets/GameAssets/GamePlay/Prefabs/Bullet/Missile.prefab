@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disLimit: 2
   distance: 0
+  pool: {fileID: 0}
 --- !u!1 &1597419660364033889
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +309,7 @@ MonoBehaviour:
   bulletDamageSender: {fileID: 7313674002487564810}
   shooter: {fileID: 0}
   isSendDamage: 0
+  pool: {fileID: 0}
 --- !u!114 &838011478102229089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fb2ee1aad4c8a43b4db4a533a4d7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: 16
+  _tag: 10
 --- !u!1 &5258340719083366598
 GameObject:
   m_ObjectHideFlags: 0

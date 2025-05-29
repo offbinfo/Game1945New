@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ShieldItem
   m_EditorClassIdentifier: 
   itemCode: 2
+  poolTag: 13
   itemName: Shield Item
-  dropRate: 0

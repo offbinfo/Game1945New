@@ -1,4 +1,4 @@
-using PathCreation;
+﻿using PathCreation;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -99,6 +99,7 @@ public class RoomWave : WaveManager
         for (var i = 0; i < _spawnedUnits.Count; i++)
         {
             if (!isFollowPathDone[i]) continue;
+            this._spawnedUnits[i].transform.eulerAngles = Vector3.zero;
             this._spawnedUnits[i].transform.position = Vector3.MoveTowards(this._spawnedUnits[i].transform.position, this._formationPoints[i], this._unitFormationSpeed * Time.deltaTime);
         }
         this.CheckOnAllUnitInFormation();

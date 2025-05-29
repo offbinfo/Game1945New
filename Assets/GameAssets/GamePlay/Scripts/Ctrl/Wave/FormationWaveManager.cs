@@ -36,29 +36,41 @@ public class FormationWaveManager : GameMonoBehaviour
 
     public void StartRoomWave()
     {
-        IEnumerator coroutine = null;
+        switch(typeWave)
+        {
+            case TypeWave.Short:
+            case TypeWave.Long:
+                IEnumerator coroutine = null;
 
-        if (executionMode == ExecutionMode.Sequential)
-        {
-            coroutine = (typeWave == TypeWave.Short) ? DelayNextRoomWaveShort() : DelayNextRoomWaveLong();
-            StartCoroutine(coroutine);
-        }
-        else if (executionMode == ExecutionMode.Simultaneous)
-        {
-            if (typeWave == TypeWave.Short)
-            {
-                foreach (RoomWave roomWave in roomWaves)
+                if (executionMode == ExecutionMode.Sequential)
                 {
-                    roomWave.StartWave();
+                    coroutine = (typeWave == TypeWave.Short) ? DelayNextRoomWaveShort() : DelayNextRoomWaveLong();
+                    StartCoroutine(coroutine);
                 }
-            }
-            else
-            {
-                foreach (RoomWaveLong roomWave in roomWaveLongs)
+                else if (executionMode == ExecutionMode.Simultaneous)
                 {
-                    roomWave.StartWave();
+                    if (typeWave == TypeWave.Short)
+                    {
+                        foreach (RoomWave roomWave in roomWaves)
+                        {
+                            roomWave.StartWave();
+                        }
+                    }
+                    else
+                    {
+                        foreach (RoomWaveLong roomWave in roomWaveLongs)
+                        {
+                            roomWave.StartWave();
+                        }
+                    }
                 }
-            }
+                break;
+            case TypeWave.Support:
+
+                break;
+            case TypeWave.Boss:
+
+                break;
         }
     }
 

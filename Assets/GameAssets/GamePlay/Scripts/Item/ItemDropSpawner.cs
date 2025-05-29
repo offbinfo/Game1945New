@@ -10,13 +10,13 @@ public class ItemDropSpawner : Spawner
     protected override void Awake()
     {
         base.Awake();
-        if (ItemDropSpawner.instance != null) Debug.LogError("Only 1 ItemDropSpawner allow to exist");
-        ItemDropSpawner.instance = this;
+        if (instance != null) DebugCustom.LogError("Only 1 ItemDropSpawner allow to exist");
+        instance = this;
     }
 
-    public virtual void DropRandom(ItemCode itemCode, Vector3 pos, Quaternion rot)
+    public virtual void DropRandom(PoolTag itemCode, Vector3 pos, Quaternion rot)
     {
-        /*Transform itemDrop = this.Spawn(itemCode.ToString(), pos, rot);
-        itemDrop.gameObject.SetActive(true);*/
+        Object_Pool itemDrop = this.Spawn(itemCode, pos, rot);
+        itemDrop.gameObject.SetActive(true);
     }
 }

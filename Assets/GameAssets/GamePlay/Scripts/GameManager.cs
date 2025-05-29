@@ -17,13 +17,13 @@ public class GameManager : GameMonoBehaviour
         instance = this;
     }
 
-    /*[SerializeField] bool isStartUpDone = false;
+    [SerializeField] bool isStartUpDone = false;
     [SerializeField] Transform spawnPos;
     [SerializeField] Transform startPos;
     [SerializeField] Transform endPos;
     [SerializeField] Transform currentShipPlayer;
 
-    [SerializeField] Dictionary<float, int> timeCoint = new Dictionary<float, int>() { { 60, 300}, { 120 , 200}, { 180, 100}};
+    [SerializeField] Dictionary<float, int> timeCoint = new Dictionary<float, int>() { { 60, 300 }, { 120, 200 }, { 180, 100 } };
 
     [SerializeField] int coint = 0;
 
@@ -31,21 +31,12 @@ public class GameManager : GameMonoBehaviour
 
     public int Coint { get => coint; }
 
-    private static GameManager instance;
-
-    public static GameManager Instance { get => instance; }
-
     private float onLoseDelay = 1f;
     private float onLoseTimer = 0f;
     private float onWinDelay = 2f;
     private float onWinTimer = 0f;
 
     private float scrollSpeed = 0.5f;
-    protected override void Awake()
-    {
-        base.Awake();
-        GameManager.instance = this;
-    }
     protected override void LoadComponents()
     {
         base.LoadComponents();
@@ -55,7 +46,7 @@ public class GameManager : GameMonoBehaviour
     private void LoadPoint()
     {
         this.spawnPos = GameObject.Find("SpawnPoint").transform;
-        if (this.spawnPos == null )
+        if (this.spawnPos == null)
         {
             this.spawnPos.position = new Vector2(0, -2);
         }
@@ -81,8 +72,8 @@ public class GameManager : GameMonoBehaviour
     private void Update()
     {
         if (isEndlevelProcess) return;
-        CheckOnWinLevel();
-        CheckOnLoseLevel();
+/*        CheckOnWinLevel();
+        CheckOnLoseLevel();*/
     }
 
     private IEnumerator LoadStartUp()
@@ -128,7 +119,7 @@ public class GameManager : GameMonoBehaviour
         }
     }
 
-    public void CheckOnLoseLevel()
+/*    public void CheckOnLoseLevel()
     {
         if (GameCtrl.Instance.CurrentShip == null)
         {
@@ -140,7 +131,7 @@ public class GameManager : GameMonoBehaviour
             LevelOver();
             isEndlevelProcess = true;
         }
-       
+
     }
 
     public void CheckOnWinLevel()
@@ -159,9 +150,9 @@ public class GameManager : GameMonoBehaviour
             LevelWin();
             isEndlevelProcess = true;
         }
-    }
+    }*/
 
-    public void LevelWin()
+/*    public void LevelWin()
     {
         MenuManager.Instance.SwitchCanvas(Menu.GAME_WIN);
         foreach (var item in timeCoint)
@@ -193,7 +184,7 @@ public class GameManager : GameMonoBehaviour
     public void AddCoin(int coin)
     {
         coint += coin;
-    }
+    }*/
 
     public void AddStatBonus()
     {
@@ -216,7 +207,7 @@ public class GameManager : GameMonoBehaviour
         currentShip.GetComponentInChildren<ShieldAbility>().SetBonusCooldownValue(-coolDownLevel * 1f);
 
 
-        int shieldLevel = data.data.Where(x => x.stat == Stat.ShieldBonus).FirstOrDefault().level;  
+        int shieldLevel = data.data.Where(x => x.stat == Stat.ShieldBonus).FirstOrDefault().level;
         ShieldAbility shipShield = currentShip.GetComponentInChildren<ShieldAbility>();
         shipShield.SetBonusTimeExits(shieldLevel * 0.5f);
 
@@ -225,6 +216,6 @@ public class GameManager : GameMonoBehaviour
         PowerUpAbility powerUpAbility = currentShip.GetComponentInChildren<PowerUpAbility>();
 
         powerUpAbility.SetBonusTimeExits(poweUpLevel * 0.5f);
-    }*/
+    }
 
 }

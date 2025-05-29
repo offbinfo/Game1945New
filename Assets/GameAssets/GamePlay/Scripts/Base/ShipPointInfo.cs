@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 [Serializable]
 public class ShipPointInfo
 {
-    public string Name;
+    public PoolTag Name;
     public float Rot;
 }
 

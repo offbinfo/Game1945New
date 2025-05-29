@@ -10,6 +10,8 @@ public class LevelManager : GameMonoBehaviour
 {
 
     [SerializeField] private List<FormationWaveManager> waves;
+    [SerializeField] private WaveManager waveAsteroid;
+    [SerializeField] private WaveManager waveBoss;
     private int currentWaveIndex = 0;
 
     private State currentState = State.NotStarted;
@@ -25,6 +27,7 @@ public class LevelManager : GameMonoBehaviour
 
     public int curEnemy;
     public float totalEnemy;
+    public int TotalWave => MaxWave + 2;
 
 
     protected override void Awake()
@@ -71,20 +74,37 @@ public class LevelManager : GameMonoBehaviour
             curEnemy = 0;
             totalEnemy = 0;
 
-            if (currentWaveIndex < waves.Count)
+            if(currentWaveIndex < waves.Count)
             {
                 waves[currentWaveIndex].gameObject.SetActive(false);
-                currentWaveIndex++;
+            }
+            currentWaveIndex++;
+
+            if (currentWaveIndex < waves.Count)
+            {
                 if (currentWaveIndex < waves.Count)
                 {
                     waves[currentWaveIndex].gameObject.SetActive(true);
                     waves[currentWaveIndex].StartRoomWave();
                 }
             }
-            else if (currentWaveIndex == waves.Count)
+            else if (currentWaveIndex == 3)
+            {
+                waves[waves.Count - 1].gameObject.SetActive(false);
+                waveAsteroid.gameObject.SetActive(true);
+                waveAsteroid.StartWave();
+            }
+            else if (currentWaveIndex == 4)
+            {
+                waveAsteroid.gameObject.SetActive(false);
+                waveBoss.gameObject.SetActive(true);
+                waveBoss.StartWave();            
+            }
+            else if (currentWaveIndex >= 5)
             {
                 EndLevel();
             }
+            EventDispatcher.PostEvent(EventID.OnUpdateWave, 0);
         }
     }
 
@@ -103,5 +123,6 @@ public class LevelManager : GameMonoBehaviour
     {
         currentState = State.Completed;
         Debug.Log("End level");
+        Board_UIs.instance.OpenBoard(UiPanelType.PopupWin);
     }
 }

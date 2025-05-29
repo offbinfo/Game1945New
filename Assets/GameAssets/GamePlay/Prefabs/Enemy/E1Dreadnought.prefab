@@ -564,6 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disLimit: 5
   distance: 0
+  pool: {fileID: 0}
 --- !u!1 &3467115199942556981
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fb2ee1aad4c8a43b4db4a533a4d7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: 21
+  _tag: 25
 --- !u!1 &5730568622436234878
 GameObject:
   m_ObjectHideFlags: 0

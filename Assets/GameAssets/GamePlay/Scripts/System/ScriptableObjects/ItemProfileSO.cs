@@ -6,6 +6,7 @@ using UnityEngine;
 public class ItemProfileSO : ScriptableObject
 {
     public ItemCode itemCode = ItemCode.NoItem;
+    public PoolTag poolTag;
     public string itemName = "no-name";
 
 }

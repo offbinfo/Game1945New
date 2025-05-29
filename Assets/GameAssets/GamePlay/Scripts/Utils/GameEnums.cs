@@ -22,7 +22,9 @@ public enum ExecutionMode
 public enum TypeWave
 {
     Short,   
-    Long,   
+    Long,
+    Support,
+    Boss
 }
 
 public enum PoolTag
@@ -64,4 +66,8 @@ public enum PoolTag
     FX_Impact3,
     FX_Detruction,
     FX_Detruction_Boss,
+    Asteroid,
+    NoItem,
+
+
 }
