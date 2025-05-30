@@ -57,7 +57,7 @@ public class WatchAds
         if (GameDatas.RemoveAdsForever)
             return true;
 
-        return ApplovinAds.Instance && ApplovinAds.Instance.IsReadyRewardedVideo ();
+        return false/*ApplovinAds.Instance && ApplovinAds.Instance.IsReadyRewardedVideo ()*/;
     }
 
     public static void ShowVideoRewardedApplovin (Action onComplete, Action onClose)
@@ -79,7 +79,7 @@ public class WatchAds
             GameLayout.ShowProcess (true);
             TimeGame.TimeScaleAds = 0;
             AudioListener.pause = true;
-            ApplovinAds.Instance.ShowRewardedVideo (delegate (bool success)
+            /*ApplovinAds.Instance.ShowRewardedVideo (delegate (bool success)
             {
                 if (success)
                 {
@@ -91,7 +91,7 @@ public class WatchAds
                 TimeGame.TimeScaleAds = 1;
                 AudioListener.pause = false;
                 onClose?.Invoke ();
-            });
+            });*/
         }
     }
 
@@ -100,7 +100,7 @@ public class WatchAds
         if (GameDatas.RemoveAdsForever)
             return true;
 
-        return ApplovinAds.Instance && ApplovinAds.Instance.IsReadyInterstitialVideo ();
+        return false/*ApplovinAds.Instance && ApplovinAds.Instance.IsReadyInterstitialVideo ()*/;
     }
 
     public static void ShowVideoInterstitialApplovin ()
@@ -117,7 +117,7 @@ public class WatchAds
 
         if (IsLoadedVideoInterstitialApplovin ())
         {
-            ApplovinAds.Instance.ShowInterstitialVideo ();
+            //ApplovinAds.Instance.ShowInterstitialVideo ();
         }
     }
     #endregion

@@ -5,7 +5,7 @@ using Firebase.Analytics;
 
 public class ApplovinAds : MonoBehaviour
 {
-    [RuntimeInitializeOnLoadMethod]
+    /*[RuntimeInitializeOnLoadMethod]
     static void CreateInstance ()
     {
         if (!Instance)
@@ -274,7 +274,7 @@ public class ApplovinAds : MonoBehaviour
         };
 
         FirebaseAnalytics.LogEvent ("ad_impression", impressionParameters);
-    }
+    }*/
 
     //private static void AppsflyerTracking (MaxSdkBase.AdInfo adInfo)
     //{
