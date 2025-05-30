@@ -119,6 +119,7 @@ public class ShipShooting : ShipAbstract
             Quaternion rotation = Quaternion.Euler(shootPoint.rotation.eulerAngles.x, shootPoint.rotation.eulerAngles.y, shipPointInfo[count].Rot);
             PoolTag bulletName = shipPointInfo[count].Name;
 
+            FXSpawner.Instance.Spawn(PoolTag.SparkExplosion, spawnPos, rotation);
             Object_Pool newBullet = BulletSpawner.Instance.Spawn(bulletName, spawnPos, rotation);
             if (newBullet == null) return;
             this.SetDamage(newBullet.transform);

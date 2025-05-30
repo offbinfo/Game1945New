@@ -15,24 +15,26 @@ public class EnemyShootingBullet3 : EnemyShootingBullet
     {
         base.Start();
         angle = startAngle;
+        StartCoroutine(Shooting());
     }
-    protected override void Shooting()
+    protected IEnumerator Shooting()
     {
-        shootTimer += Time.deltaTime;
-        if (shootTimer < shootDelay) return;
-        shootTimer = 0f;
-        float angleStep = Math.Abs(endAngle - startAngle) / bulletAmount;
-        float angle = startAngle;
-
-
-        for (int i = 0; i < bulletAmount + 1; i++)
+        while (true)
         {
-            float rot = CalculateRot(angle);
-            this.ShootingWithDirection(transform.parent.position + new Vector3(-(Mathf.Sin(12 * angle * Mathf.PI/360)) * 0.2f, (Mathf.Cos(12 * angle * Mathf.PI / 360)) * 0.2f, 0), transform.parent.rotation * Quaternion.Euler(0, 0, rot));
+            yield return Yielders.Get(shootDelay);
+            shootTimer = 0f;
+            float angleStep = Math.Abs(endAngle - startAngle) / bulletAmount;
+            float angle = startAngle;
 
-            angle += angleStep;
+
+            for (int i = 0; i < bulletAmount + 1; i++)
+            {
+                float rot = CalculateRot(angle);
+                this.ShootingWithDirection(transform.parent.position + new Vector3(-(Mathf.Sin(12 * angle * Mathf.PI / 360)) * 0.2f, (Mathf.Cos(12 * angle * Mathf.PI / 360)) * 0.2f, 0), transform.parent.rotation * Quaternion.Euler(0, 0, rot));
+
+                angle += angleStep;
+            }
         }
-
     }
 
 

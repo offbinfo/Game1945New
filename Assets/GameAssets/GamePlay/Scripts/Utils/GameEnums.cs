@@ -27,6 +27,16 @@ public enum TypeWave
     Boss
 }
 
+public enum TypeEnemyShoot
+{
+    Normal,
+    DualWaveSplitShot,
+    FiveWayShot,
+    StraightQuadShot,
+    SplitFanFiveShot,
+    StaggeredVolley,
+}
+
 public enum PoolTag
 {
     Bullet_Ship1,
@@ -68,6 +78,6 @@ public enum PoolTag
     FX_Detruction_Boss,
     Asteroid,
     NoItem,
-
+    SparkExplosion,
 
 }

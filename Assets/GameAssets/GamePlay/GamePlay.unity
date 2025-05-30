@@ -152,12 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847bebef11861a449b26504a25ecc3b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStartUpDone: 0
-  spawnPos: {fileID: 1517294443}
-  startPos: {fileID: 1874850935}
-  endPos: {fileID: 2048584056}
-  currentShipPlayer: {fileID: 0}
-  coint: 0
 --- !u!4 &37758234
 Transform:
   m_ObjectHideFlags: 0
@@ -7135,10 +7129,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ship_2
       objectReference: {fileID: 0}
-    - target: {fileID: 6186212836614859175, guid: a72cc360d7a4fe44da9c1b86090a2609, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7382,6 +7372,7 @@ MonoBehaviour:
   - {fileID: 2395260815793013703, guid: 56b4de60cfeec264481e8546f58f24c7, type: 3}
   - {fileID: 503517264620211186, guid: 21910e16399dca84aa686ab6ed841f8a, type: 3}
   - {fileID: 8014026408456276224, guid: b45f13bd47c0ed341b31b371734023a6, type: 3}
+  - {fileID: 3086953003326579977, guid: edada007877f8f446a5aad6bcaa65e9e, type: 3}
   poolObjs: []
   holder: {fileID: 1977415464788846402}
 --- !u!4 &1977415464656430260
@@ -8029,6 +8020,7 @@ MonoBehaviour:
   - {fileID: 6695673231111204650, guid: df35ba4899c8dc0478aa220c3933c930, type: 3}
   - {fileID: 6910687904867704287, guid: f6e5e222299c1ed40aeac0c455767dd7, type: 3}
   - {fileID: 2036862367795583101, guid: f3f2be9e8c2d86f46acec79de6778fff, type: 3}
+  - {fileID: 6640746715284973518, guid: 0dbf7280a7aac4f4a94337c5672f93c3, type: 3}
   poolObjs: []
   holder: {fileID: 7138915811494296641}
   E1Scout: E1Scout

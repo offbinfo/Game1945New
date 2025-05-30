@@ -16,14 +16,16 @@ public abstract class EnemyShootingBullet : EnemyBossBehaviour
 
    [SerializeField] protected float startAngle = 180f;
    [SerializeField] protected float endAngle = 360f;
-   [SerializeField] protected int bulletAmount = 10;
+   protected int bulletAmount = 1;
+   [SerializeField] protected TypeEnemyShoot typeEnemyShoot;
 
 
-    private void Update()
+
+/*    private void Update()
     {
         this.Shooting();
     }
-    protected abstract void Shooting();
+    protected abstract void Shooting();*/
 
     protected virtual void ShootingWithDirection(Vector2 bulDir, Quaternion rot)
     {

@@ -13,6 +13,7 @@ public class EnemyShootingBullet2 : EnemyShootingBullet
 
     [SerializeField] private float bulletArray = 1;
     [SerializeField] private float bulletEachArray = 1;
+
     protected override void Start()
     {
         base.Start();
@@ -21,24 +22,28 @@ public class EnemyShootingBullet2 : EnemyShootingBullet
         {
             angle.Add((360 / bulletArray) * i);
         }
+
+        StartCoroutine(Shooting());
     }
-    protected override void Shooting()
+    protected IEnumerator Shooting()
     {
-        shootTimer += Time.deltaTime;
-        if (shootTimer < shootDelay) return;
-        shootTimer = 0f;
-
-        for (int i = 0; i < bulletArray; i++)
+        while (true)
         {
-            float startAngle = angle[i];
-            for (int j = 0; j < bulletEachArray; j++)
-            {
-                float rot = CalculateRot(startAngle);
+            yield return Yielders.Get(shootDelay);
+            shootTimer = 0f;
 
-                this.ShootingWithDirection(new Vector2(transform.parent.position.x, transform.parent.position.y), transform.parent.rotation * Quaternion.Euler(0, 0, rot));
-                startAngle += angleStep + 10;
+            for (int i = 0; i < bulletArray; i++)
+            {
+                float startAngle = angle[i];
+                for (int j = 0; j < bulletEachArray; j++)
+                {
+                    float rot = CalculateRot(startAngle);
+
+                    this.ShootingWithDirection(new Vector2(transform.parent.position.x, transform.parent.position.y), transform.parent.rotation * Quaternion.Euler(0, 0, rot));
+                    startAngle += angleStep + 10;
+                }
+                angle[i] += angleStep;
             }
-            angle[i] += angleStep;
         }
     }
 }

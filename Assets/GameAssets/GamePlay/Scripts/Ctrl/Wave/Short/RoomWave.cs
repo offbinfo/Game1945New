@@ -1,4 +1,5 @@
-﻿using PathCreation;
+﻿using DG.Tweening;
+using PathCreation;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -92,6 +93,7 @@ public class RoomWave : WaveManager
         }
     }
 
+    private List<bool> isRotatedToFormation = new List<bool>();
     public void FormationWave()
     {
         if (this.isAllUnitInFormation) return;

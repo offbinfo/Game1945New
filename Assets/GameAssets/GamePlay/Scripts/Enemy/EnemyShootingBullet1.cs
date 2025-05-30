@@ -4,29 +4,42 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyShootingBullet1 : EnemyShootingBullet
 {
+    [SerializeField, Range(0f, 1f)]
+    private float shootChance = 0.7f;
 
-
-    protected override void Shooting()
+    protected override void Start()
     {
-        shootTimer += Time.deltaTime;
-        if (shootTimer < shootDelay) return;
-        shootTimer = 0f;
-        float angleStep = Math.Abs(endAngle - startAngle) / bulletAmount;
-        float angle = startAngle;
+        base.Start();
 
+        StartCoroutine(Shooting());
+    }
 
-
-        for (int j = 0; j < bulletAmount + 1; j++)
+    private IEnumerator Shooting()
+    {
+        while (true)
         {
-            float rot = CalculateRot(angle);
-            this.ShootingWithDirection(transform.parent.position, transform.parent.rotation * Quaternion.Euler(0, 0, rot));
+            yield return Yielders.Get(shootDelay);
+            shootTimer = 0f;
 
-            angle += angleStep;
+            if (Random.value > shootChance)
+            {
+                continue;
+            }
+
+            float angleStep = Mathf.Abs(endAngle - startAngle) / bulletAmount;
+            float angle = startAngle;
+
+            for (int j = 0; j < bulletAmount; j++)
+            {
+                float rot = CalculateRot(angle);
+                ShootingWithDirection(transform.parent.position, transform.parent.rotation * Quaternion.Euler(0, 0, rot));
+                angle += angleStep;
+            }
         }
-
     }
 
 }
