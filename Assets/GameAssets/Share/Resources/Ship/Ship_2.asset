@@ -16,7 +16,7 @@ MonoBehaviour:
   maxHeath: 1
   shieldTimeUp: 0
   powerTimeUp: 1
-  mainDamage: 6
+  mainDamage: 40
   mainAttackSpeed: 0.25
   mainBulletList:
   - Levels:

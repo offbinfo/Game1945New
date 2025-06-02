@@ -24,6 +24,7 @@ public class ScreenMainMenu : UIPanel, IBoard
     protected override void Start()
     {
         base.Start();
+        Application.targetFrameRate = 60;
         ActiveAnim();
     }
 

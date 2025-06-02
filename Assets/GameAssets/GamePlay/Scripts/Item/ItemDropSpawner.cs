@@ -16,7 +16,9 @@ public class ItemDropSpawner : Spawner
 
     public virtual void DropRandom(PoolTag itemCode, Vector3 pos, Quaternion rot)
     {
-        Object_Pool itemDrop = this.Spawn(itemCode, pos, rot);
+        Object_Pool itemDrop = this.Spawn(itemCode, pos, Quaternion.identity);
+        itemDrop.transform.position = new Vector3(itemDrop.transform.position.x, 
+            itemDrop.transform.position.y, -1);
         itemDrop.gameObject.SetActive(true);
     }
 }

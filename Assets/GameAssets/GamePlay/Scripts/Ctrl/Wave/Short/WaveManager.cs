@@ -30,7 +30,12 @@ public class WaveManager : GameMonoBehaviour
     [Space]
     [Header("SetUp Formation")]
     [SerializeField]
-    protected TypeSetUpWave typeSetUpWave;
+    protected TypeSetUpWaveEnd typeSetUpWave;
+    /*    [SerializeField]
+        protected TypeSetUpWaveStart typeSetUpWaveStart;*/
+    [SerializeField]
+    protected bool isMovePathFirstWave = true;
+
     protected int curIndexRoom = 0;
     [SerializeField]
     protected float delayChangeSetUp;
@@ -88,11 +93,16 @@ public class WaveManager : GameMonoBehaviour
 
     public virtual void StartWave()
     {
-/*        if (this.currentState == State.NotStarted)
+        /*        if (this.currentState == State.NotStarted)
+                {
+                    this.currentState = State.Started;
+                    StartCoroutine(this.StartSpawn());
+                }*/
+        if (!gameObject.activeSelf)
         {
-            this.currentState = State.Started;
-            StartCoroutine(this.StartSpawn());
-        }*/
+            StopCoroutine(this.StartSpawn());
+            return;
+        }
         StartCoroutine(this.StartSpawn());
     }
 
@@ -183,7 +193,10 @@ public class WaveManager : GameMonoBehaviour
                 }
                 newEnemy.gameObject.SetActive(true);*/
 
-        StartCoroutine(MoveOnPath(newEnemy, movePath));
+        if (isMovePathFirstWave)
+        {
+            StartCoroutine(MoveOnPath(newEnemy, movePath));
+        }
         return true;
     }
 
@@ -250,7 +263,7 @@ public class WaveManager : GameMonoBehaviour
 
             if (distanceTravelled[index] >= path.path.length)
             {
-                if (typeSetUpWave == TypeSetUpWave.Loop)
+                if (typeSetUpWave == TypeSetUpWaveEnd.Loop)
                 {
                     distanceTravelled[index] = 0f;
                 }

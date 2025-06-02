@@ -10,7 +10,6 @@ public class LevelManager : GameMonoBehaviour
 {
 
     [SerializeField] private List<FormationWaveManager> waves;
-    [SerializeField] private WaveManager waveAsteroid;
     [SerializeField] private WaveManager waveBoss;
     private int currentWaveIndex = 0;
 
@@ -27,7 +26,9 @@ public class LevelManager : GameMonoBehaviour
 
     public int curEnemy;
     public float totalEnemy;
-    public int TotalWave => MaxWave + 2;
+    public int TotalWave => MaxWave;
+    private GameObject curStage;
+    private int indexStage = 1;
 
 
     protected override void Awake()
@@ -65,7 +66,7 @@ public class LevelManager : GameMonoBehaviour
 
     private void SetUpData()
     {
-        InstantiateWave("Prefabs/Levels/Level"+ GameDatas.IndexLevel, transform);
+        InstantiateWave("Prefabs/Levels/Stage"+ GameDatas.IndexLevel+"_"+ indexStage, transform);
     }
 
     public void InstantiateWave(string path, Transform parent = null)
@@ -74,60 +75,58 @@ public class LevelManager : GameMonoBehaviour
         if (prefab == null)
         {
             DebugCustom.LogError($"[ResourceLoader] Prefab not found at path: Resources/{path}");
+            EndLevel();
             return;
         }
         LevelWave levelWave = Instantiate(prefab, parent).GetComponent<LevelWave>();
-        levelWave.transform.parent = parent;    
+        levelWave.transform.parent = parent;
+        curStage = levelWave.gameObject;
 
         waves.Clear();
-        waves = levelWave.waves;
-        waveAsteroid = levelWave.waveAsteroid;
-        waveBoss = levelWave.waveBoss;
-    }
-
-    /*    [Button("Test")]
-        public void Test()
+        if (levelWave.waveBoss != null)
         {
-            OnFinishWave(null);
-        }*/
+            waveBoss = levelWave.waveBoss;
+        } else
+        {
+            waves = levelWave.waves;
+        }
+    }
 
     private void OnFinishWave(object obj)
     {
         curEnemy++;
+
         if(curEnemy == totalEnemy)
         {
             curEnemy = 0;
             totalEnemy = 0;
 
-            if(currentWaveIndex < waves.Count)
-            {
-                waves[currentWaveIndex].gameObject.SetActive(false);
-            }
-            currentWaveIndex++;
-
-            if (currentWaveIndex < waves.Count)
+            if (waves.Count > 0)
             {
                 if (currentWaveIndex < waves.Count)
                 {
-                    waves[currentWaveIndex].gameObject.SetActive(true);
-                    waves[currentWaveIndex].StartRoomWave();
+                    waves[currentWaveIndex].gameObject.SetActive(false);
                 }
-            }
-            else if (currentWaveIndex == 3)
+                currentWaveIndex++;
+
+                if (currentWaveIndex < waves.Count)
+                {
+                    if (currentWaveIndex < waves.Count)
+                    {
+                        waves[currentWaveIndex].gameObject.SetActive(true);
+                        waves[currentWaveIndex].StartRoomWave();
+                    }
+                }
+                else if (currentWaveIndex >= waves.Count)
+                {
+                    EndStage();
+                }
+            } else
             {
-                waves[waves.Count - 1].gameObject.SetActive(false);
-                waveAsteroid.gameObject.SetActive(true);
-                waveAsteroid.StartWave();
-            }
-            else if (currentWaveIndex == 4)
-            {
-                waveAsteroid.gameObject.SetActive(false);
-                waveBoss.gameObject.SetActive(true);
-                waveBoss.StartWave();            
-            }
-            else if (currentWaveIndex >= 5)
-            {
-                EndLevel();
+                if(waveBoss != null)
+                {
+                    EndStage();
+                }
             }
             EventDispatcher.PostEvent(EventID.OnUpdateWave, 0);
         }
@@ -135,19 +134,38 @@ public class LevelManager : GameMonoBehaviour
 
     public void StartLevel()
     {
-        if (currentState == State.NotStarted)
+        currentWaveIndex = 0;
+        if (waveBoss != null)
         {
-            if (waves.Count <= 0) return;
-            waves[currentWaveIndex].gameObject.SetActive(true);
-            waves[currentWaveIndex].StartRoomWave();
-            currentState = State.Started;
+            waveBoss.StartWave();
+        } else
+        {
+            if (currentState == State.NotStarted)
+            {
+                if (waves.Count <= 0) return;
+                waves[currentWaveIndex].gameObject.SetActive(true);
+                waves[currentWaveIndex].StartRoomWave();
+                currentState = State.Started;
+            }
         }
+    }
+
+    private void EndStage()
+    {
+        currentState = State.NotStarted;
+        DebugCustom.LogColor("End Stage");
+        curStage.SetActive(false);
+
+        CameraController.instance.ZoomOutSmooth();
+        indexStage++;
+        SetUpData();
+        StartLevel();
+
     }
 
     private void EndLevel()
     {
         currentState = State.Completed;
-        Debug.Log("End level");
         Board_UIs.instance.OpenBoard(UiPanelType.PopupWin);
     }
 }

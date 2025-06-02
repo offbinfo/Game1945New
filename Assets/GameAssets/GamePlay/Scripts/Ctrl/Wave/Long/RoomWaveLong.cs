@@ -79,16 +79,16 @@ public class RoomWaveLong : WaveLongManager
     {
         switch (typeSetUpWave)
         {
-            case TypeSetUpWave.Loop:
+            case TypeSetUpWaveEnd.Loop:
                 break;
-            case TypeSetUpWave.None:
-            case TypeSetUpWave.ChangeWave:
-            case TypeSetUpWave.ChangeWaveUsingPath:
+            case TypeSetUpWaveEnd.None:
+            case TypeSetUpWaveEnd.ChangeWave:
+            case TypeSetUpWaveEnd.ChangeWaveUsingPath:
                 FormationWave();
                 break;
             default:
                 break;
-            case TypeSetUpWave.PathToPath:
+            case TypeSetUpWaveEnd.PathToPath:
                 break;
         }
     }
@@ -184,13 +184,13 @@ public class RoomWaveLong : WaveLongManager
         base.OnFormationCompleted();
         switch (typeSetUpWave)
         {
-            case TypeSetUpWave.ChangeWave:
+            case TypeSetUpWaveEnd.ChangeWave:
                 StartCoroutine(ChangeToFormation());
                 break;
-            case TypeSetUpWave.ChangeWaveUsingPath:
+            case TypeSetUpWaveEnd.ChangeWaveUsingPath:
                 StartCoroutine(ChangeToNextWave());
                 break;
-            case TypeSetUpWave.PathToPath:
+            case TypeSetUpWaveEnd.PathToPath:
                 break;
         }
     }

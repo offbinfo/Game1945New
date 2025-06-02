@@ -516,6 +516,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6186212836614859160}
   - component: {fileID: 6186212836614859161}
+  - component: {fileID: 5048828078284215117}
+  - component: {fileID: 2275766914237353226}
   m_Layer: 2
   m_Name: Ship_2
   m_TagString: Player
@@ -537,7 +539,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6186212837870351029}
-  - {fileID: 6186212837990688640}
   - {fileID: 6186212836650524741}
   - {fileID: 6186212837924262202}
   - {fileID: 6186212837587138438}
@@ -557,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6740f81d73c43dc44a181bdbff0844a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipMovement: {fileID: 6186212837990688641}
+  shipMovement: {fileID: 0}
   shipShooting: {fileID: 6186212836650524743}
   shipSubShooting: {fileID: 6186212836650524742}
   shipDamageReceiver: {fileID: 6186212838482558726}
@@ -565,6 +566,52 @@ MonoBehaviour:
   shipProfile: {fileID: 11400000, guid: a0a5c2fa8f358074391882cfd473f8c5, type: 2}
   shipModel: {fileID: 6186212837870351031}
   shipLevel: {fileID: 6186212837924262203}
+--- !u!114 &5048828078284215117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6186212836614859175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6491517c6c0bd448ab97866ae33b273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  isMoving: 0
+  movableLayers:
+    serializedVersion: 2
+    m_Bits: 4
+  moveSpeed: 5
+  shipController: {fileID: 6186212836614859161}
+--- !u!50 &2275766914237353226
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6186212836614859175}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &6186212836650524740
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +663,7 @@ MonoBehaviour:
   currentLaser: 0
   shootDelay: 0.15
   shootTimer: 0.15
-  damage: 1
+  damage: 5
   damageBonus: 0
   shipShootPoints: []
   bulletName: 0
@@ -2203,92 +2250,6 @@ Transform:
   - {fileID: 6186212837514747119}
   m_Father: {fileID: 6186212837147333473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6186212837990688655
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6186212837990688640}
-  - component: {fileID: 6186212837990688641}
-  - component: {fileID: 738489538676680964}
-  m_Layer: 2
-  m_Name: ShipMovement
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6186212837990688640
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6186212837990688655}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6186212836614859160}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6186212837990688641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6186212837990688655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6491517c6c0bd448ab97866ae33b273, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 0, z: 0}
-  isMoving: 0
-  movableLayers:
-    serializedVersion: 2
-    m_Bits: 4
-  shipController: {fileID: 6186212836614859161}
---- !u!58 &738489538676680964
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6186212837990688655}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.23
 --- !u!1 &6186212837998385171
 GameObject:
   m_ObjectHideFlags: 0

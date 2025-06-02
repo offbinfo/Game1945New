@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum TypeSetUpWave
+public enum TypeSetUpWaveEnd
 {
     None,
     Loop,
@@ -11,6 +11,12 @@ public enum TypeSetUpWave
     PathToPath,
     PathToEnd,
     WaveToEnd,
+}
+
+public enum TypeSetUpWaveStart
+{
+    None,
+    Formation,
 }
 
 public enum ExecutionMode
@@ -80,4 +86,11 @@ public enum PoolTag
     NoItem,
     SparkExplosion,
 
+}
+
+public enum TypeShake
+{
+    Low,
+    Medium,
+    High
 }

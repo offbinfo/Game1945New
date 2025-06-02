@@ -46,4 +46,9 @@ public class EnemyShootingBullet2 : EnemyShootingBullet
             }
         }
     }
+
+    private void OnDisable()
+    {
+        StopCoroutine(Shooting());
+    }
 }

@@ -12,7 +12,40 @@ public class ObjFollowMouse : ObjMovement
     private Transform dragging = null;
     private Vector3 offset;
 
+    private float moveSpeed = 18f;
+    private bool isTouching = false;
+
+    private Vector3 touchPosition;
+    private Rigidbody2D rb;
+    private Vector3 direction;
+
+    protected override void Start()
+    {
+        base.Start();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     private void Update()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            touchPosition.z = 0;
+
+            direction = (touchPosition - transform.position).normalized;
+
+            rb.velocity = direction * moveSpeed;
+
+            if (touch.phase == TouchPhase.Ended)
+            {
+                rb.velocity = Vector2.zero;
+            }
+        }
+    }
+
+
+    /*private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -34,7 +67,7 @@ public class ObjFollowMouse : ObjMovement
         {
             transform.parent.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
-    }
+    }*/
 
     protected override void GetTargetPosition()
     {

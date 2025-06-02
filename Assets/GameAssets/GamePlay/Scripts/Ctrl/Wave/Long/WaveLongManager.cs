@@ -27,7 +27,7 @@ public class WaveLongManager : GameMonoBehaviour
     [Space]
     [Header("SetUp Formation")]
     [SerializeField]
-    protected TypeSetUpWave typeSetUpWave;
+    protected TypeSetUpWaveEnd typeSetUpWave;
     protected int curIndexRoom = 0;
     [SerializeField]
     protected float delayChangeSetUp;
@@ -156,7 +156,7 @@ public class WaveLongManager : GameMonoBehaviour
         newEnemy.gameObject.SetActive(true);
         LevelManager.Instance.totalEnemy++;
 
-        if (typeSetUpWave == TypeSetUpWave.PathToEnd)
+        if (typeSetUpWave == TypeSetUpWaveEnd.PathToEnd)
         {
             StartCoroutine(MoveOnPath(newEnemy, movePath));
         }
@@ -226,7 +226,7 @@ public class WaveLongManager : GameMonoBehaviour
 
             if (distanceTravelled[index] >= path.path.length)
             {
-                if (typeSetUpWave == TypeSetUpWave.Loop)
+                if (typeSetUpWave == TypeSetUpWaveEnd.Loop)
                 {
                     distanceTravelled[index] = 0f;
                 }
