@@ -57,7 +57,7 @@ public class ScreenGamePlay : UIPanel, IBoard
     private IEnumerator DelayActiveTxtWave()
     {
         txtWave.gameObject.SetActive(true);
-        txtWave.text = "Wave " + (LevelManager.Instance.CurrentWaveIndex + 1) + "/" + LevelManager.Instance.TotalWave;
+        txtWave.text = "stage " + (LevelManager.Instance.indexStage) + "/" + 5;
         yield return Yielders.Get(2.5f);
         txtWave.gameObject.SetActive(false);
     }

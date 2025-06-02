@@ -31,10 +31,8 @@ public class WaveManager : GameMonoBehaviour
     [Header("SetUp Formation")]
     [SerializeField]
     protected TypeSetUpWaveEnd typeSetUpWave;
-    /*    [SerializeField]
-        protected TypeSetUpWaveStart typeSetUpWaveStart;*/
     [SerializeField]
-    protected bool isMovePathFirstWave = true;
+    protected bool isMovePathFirstWave = false;
 
     protected int curIndexRoom = 0;
     [SerializeField]
@@ -197,6 +195,15 @@ public class WaveManager : GameMonoBehaviour
         {
             StartCoroutine(MoveOnPath(newEnemy, movePath));
         }
+        else
+        {
+            for (int i = 0; i < _spawnedUnits.Count; i++)
+            {
+                isFollowPathDone[i] = true;
+            }
+            hasFormationCompleted = true;
+        }
+        //StartCoroutine(MoveOnPath(newEnemy, movePath));
         return true;
     }
 
@@ -347,6 +354,6 @@ public class WaveManager : GameMonoBehaviour
 
     protected virtual void OnFormationCompleted()
     {
-        
+        DebugCustom.LogColor("OnFormationCompleted");
     }
 }

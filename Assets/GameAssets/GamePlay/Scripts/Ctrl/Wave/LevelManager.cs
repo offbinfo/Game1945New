@@ -28,7 +28,7 @@ public class LevelManager : GameMonoBehaviour
     public float totalEnemy;
     public int TotalWave => MaxWave;
     private GameObject curStage;
-    private int indexStage = 1;
+    public int indexStage = 1;
 
 
     protected override void Awake()
@@ -66,6 +66,7 @@ public class LevelManager : GameMonoBehaviour
 
     private void SetUpData()
     {
+        EventDispatcher.PostEvent(EventID.OnUpdateWave, 0);
         InstantiateWave("Prefabs/Levels/Stage"+ GameDatas.IndexLevel+"_"+ indexStage, transform);
     }
 
@@ -128,7 +129,6 @@ public class LevelManager : GameMonoBehaviour
                     EndStage();
                 }
             }
-            EventDispatcher.PostEvent(EventID.OnUpdateWave, 0);
         }
     }
 

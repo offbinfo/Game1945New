@@ -9,9 +9,12 @@ public class RoomWave : WaveManager
 {
     [SerializeField] private float _unitFormationSpeed = 2f;
     private List<Vector3> _formationPoints;
+    [SerializeField] private float _unitFormationSpeedChangeWave = 2f;
 
     private List<float> _unitOscillatesSpeeds = new List<float>();
-    private float amplitudeOscillates = 0.03f;
+    private float amplitudeOscillates = 0.2f;
+    private bool isSetUpFormation;
+
     protected override void LoadComponents()
     {
         base.LoadComponents();
@@ -77,26 +80,19 @@ public class RoomWave : WaveManager
 
     protected void SetUpFormation()
     {
-        if(!isMovePathFirstWave)
+        switch (typeSetUpWave)
         {
-            FormationWave();
-        }
-        else
-        {
-            switch (typeSetUpWave)
-            {
-                case TypeSetUpWaveEnd.Loop:
-                    break;
-                case TypeSetUpWaveEnd.None:
-                case TypeSetUpWaveEnd.ChangeWave:
-                case TypeSetUpWaveEnd.ChangeWaveUsingPath:
-                    FormationWave();
-                    break;
-                default:
-                    break;
-                case TypeSetUpWaveEnd.PathToPath:
-                    break;
-            }
+            case TypeSetUpWaveEnd.Loop:
+                break;
+            case TypeSetUpWaveEnd.None:
+            case TypeSetUpWaveEnd.ChangeWave:
+            case TypeSetUpWaveEnd.ChangeWaveUsingPath:
+                FormationWave();
+                break;
+            default:
+                break;
+            case TypeSetUpWaveEnd.PathToPath:
+                break;
         }
     }
 
@@ -124,17 +120,25 @@ public class RoomWave : WaveManager
 
         for (int i = 0; i < count; i++)
         {
-            if (isMovePathFirstWave)
-            {
-                if (!isFollowPathDone[i]) continue;
-            }
+            if (!isFollowPathDone[i]) continue;
 
-            _spawnedUnits[i].transform.eulerAngles = Vector3.zero;
-            _spawnedUnits[i].transform.position = Vector3.MoveTowards(
-                _spawnedUnits[i].transform.position,
-                _formationPoints[i],
-                _unitFormationSpeed * Time.deltaTime
-            );
+            if(isSetUpFormation)
+            {
+                _spawnedUnits[i].transform.eulerAngles = Vector3.zero;
+                _spawnedUnits[i].transform.position = Vector3.MoveTowards(
+                    _spawnedUnits[i].transform.position,
+                    _formationPoints[i],
+                    _unitFormationSpeedChangeWave * Time.deltaTime
+                );
+            }  else
+            {
+                _spawnedUnits[i].transform.eulerAngles = Vector3.zero;
+                _spawnedUnits[i].transform.position = Vector3.MoveTowards(
+                    _spawnedUnits[i].transform.position,
+                    _formationPoints[i],
+                    _unitFormationSpeed * Time.deltaTime
+                );
+            }
         }
 
         this.CheckOnAllUnitInFormation();
@@ -147,6 +151,7 @@ public class RoomWave : WaveManager
     }
 
     private bool movingToA = true;
+
     private void FormationOscillatesX()
     {
         if (!this.isAllUnitInFormation) return;
@@ -160,11 +165,8 @@ public class RoomWave : WaveManager
 
             for (var i = 0; i < _spawnedUnits.Count; i++)
             {
-                //if (!isFollowPathDone[i]) continue;
-                if (isMovePathFirstWave)
-                {
-                    if (!isFollowPathDone[i]) continue;
-                }
+                if (!isFollowPathDone[i]) continue;
+
                 Vector3 pointA = new Vector3(this._formationPoints[i].x + amplitudeMax, this._spawnedUnits[i].transform.position.y, 0);
                 Vector3 pointB = new Vector3(this._formationPoints[i].x + amplitudeMin, this._spawnedUnits[i].transform.position.y, 0);
                 if (movingToA)
@@ -194,11 +196,7 @@ public class RoomWave : WaveManager
         {
             for (var i = 0; i < _spawnedUnits.Count; i++)
             {
-                /*if (!isFollowPathDone[i]) continue;*/
-                if (isMovePathFirstWave)
-                {
-                    if (!isFollowPathDone[i]) continue;
-                }
+                if (!isFollowPathDone[i]) continue;
 
                 float newY = _formationPoints[i].y + Mathf.PingPong(oscillatesYTimer * _unitOscillatesSpeeds[i], amplitudeOscillates * 2) - amplitudeOscillates;
 
@@ -217,13 +215,8 @@ public class RoomWave : WaveManager
             if (spawnedUnit.transform.position != this._formationPoints[this._spawnedUnits.IndexOf(spawnedUnit)]) return;
         }
         this.isAllUnitInFormation = true;
-    }
+        isSetUpFormation = true;
 
-    // state change wave
-
-    protected override void OnFormationCompleted()
-    {
-        base.OnFormationCompleted();
         switch (typeSetUpWave)
         {
             case TypeSetUpWaveEnd.ChangeWave:
@@ -235,6 +228,24 @@ public class RoomWave : WaveManager
             case TypeSetUpWaveEnd.PathToPath:
                 break;
         }
+    }
+
+    // state change wave
+
+    protected override void OnFormationCompleted()
+    {
+        base.OnFormationCompleted();
+/*        switch (typeSetUpWave)
+        {
+            case TypeSetUpWaveEnd.ChangeWave:
+                StartCoroutine(ChangeToFormation());
+                break;
+            case TypeSetUpWaveEnd.ChangeWaveUsingPath:
+                StartCoroutine(ChangeToNextWave());
+                break;
+            case TypeSetUpWaveEnd.PathToPath:
+                break;
+        }*/
     }
 
     private IEnumerator ChangeToNextWave()

@@ -497,7 +497,7 @@ Transform:
   m_GameObject: {fileID: 970512519058782518}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -970,10 +970,9 @@ MonoBehaviour:
   enemyName: 18
   _unitSpeed: 5
   typeSetUpWave: 3
-  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
-  _unitFormationSpeed: 2
+  _unitFormationSpeed: 5
 --- !u!1 &2477545963126072616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,10 +1337,9 @@ MonoBehaviour:
   enemyName: 18
   _unitSpeed: 5
   typeSetUpWave: 3
-  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
-  _unitFormationSpeed: 2
+  _unitFormationSpeed: 5
 --- !u!1 &3080740585944667084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,10 +1907,9 @@ MonoBehaviour:
   enemyName: 18
   _unitSpeed: 5
   typeSetUpWave: 3
-  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
-  _unitFormationSpeed: 2
+  _unitFormationSpeed: 5
 --- !u!1 &3781210411032212508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,7 +2732,7 @@ Transform:
   m_GameObject: {fileID: 6556327446543625993}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3023,7 +3020,7 @@ Transform:
   m_GameObject: {fileID: 7117502973896147892}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3802,10 +3799,9 @@ MonoBehaviour:
   enemyName: 18
   _unitSpeed: 5
   typeSetUpWave: 3
-  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
-  _unitFormationSpeed: 2
+  _unitFormationSpeed: 5
 --- !u!1 &8391505003783764630
 GameObject:
   m_ObjectHideFlags: 0
@@ -3950,10 +3946,9 @@ MonoBehaviour:
   enemyName: 18
   _unitSpeed: 5
   typeSetUpWave: 3
-  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
-  _unitFormationSpeed: 2
+  _unitFormationSpeed: 5
 --- !u!1 &8455929695827453417
 GameObject:
   m_ObjectHideFlags: 0
@@ -4232,10 +4227,9 @@ MonoBehaviour:
   enemyName: 18
   _unitSpeed: 5
   typeSetUpWave: 3
-  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
-  _unitFormationSpeed: 2
+  _unitFormationSpeed: 5
 --- !u!1 &8801068422346485126
 GameObject:
   m_ObjectHideFlags: 0

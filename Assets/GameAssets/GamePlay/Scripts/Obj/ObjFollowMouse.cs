@@ -12,7 +12,7 @@ public class ObjFollowMouse : ObjMovement
     private Transform dragging = null;
     private Vector3 offset;
 
-    private float moveSpeed = 18f;
+    private float moveSpeed = 20f;
     private bool isTouching = false;
 
     private Vector3 touchPosition;
@@ -43,7 +43,6 @@ public class ObjFollowMouse : ObjMovement
             }
         }
     }
-
 
     /*private void Update()
     {
