@@ -23,9 +23,9 @@ public abstract class EnemyShootingBullet : EnemyBossBehaviour
 
 /*    private void Update()
     {
-        this.Shooting();
+        this.Shoot();
     }
-    protected abstract void Shooting();*/
+    protected abstract void Shoot();*/
 
     protected virtual void ShootingWithDirection(Vector2 bulDir, Quaternion rot)
     {
