@@ -12,7 +12,7 @@ public class RoomWave : WaveManager
     [SerializeField] private float _unitFormationSpeedChangeWave = 2f;
 
     private List<float> _unitOscillatesSpeeds = new List<float>();
-    private float amplitudeOscillates = 0.2f;
+    private float amplitudeOscillates = 0.03f;
     private bool isSetUpFormation;
 
     protected override void LoadComponents()
