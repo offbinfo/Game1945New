@@ -12,6 +12,7 @@ public class LevelWave : GameMonoBehaviour
     [Button("Async Stage")]
     public void AsyncStage()
     {
+        waves.Clear();
         for (int i = 0; i < transform.childCount; i++)
         {
             if(transform.GetChild(i).GetComponent<FormationWaveManager>() != null)
