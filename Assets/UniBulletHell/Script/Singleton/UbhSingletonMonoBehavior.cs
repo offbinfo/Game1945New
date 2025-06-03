@@ -73,7 +73,7 @@ public class UbhSingletonMonoBehavior<T> : UbhMonoBehaviour where T : UbhMonoBeh
             return;
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         DoAwake();
     }

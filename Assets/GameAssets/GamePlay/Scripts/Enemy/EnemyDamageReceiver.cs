@@ -18,6 +18,8 @@ public class EnemyDamageReceiver : DamageReceiver
     [SerializeField]
     private EnemyDamgeReceiverCtrl enemyDamgeReceiverCtrl;
     private bool isDie;
+    [SerializeField]
+    private bool isBoss;
 
     protected override void LoadComponents()
     {
@@ -43,21 +45,14 @@ public class EnemyDamageReceiver : DamageReceiver
         this.OnDeadFX();
 
         if (isDie) return;
-        if (enemyDamgeReceiverCtrl.IsBodyActive())
+        if (isBoss || enemyDamgeReceiverCtrl.IsBodyActive())
         {
             CameraController.instance.Shake(TypeShake.Medium);
 
             StartCoroutine(OnDespawn());
-            /*fxDie.Play();
-            this.enemyController.EnemyDespawn.DespawnObject();
-            DropOnDead();
-            fxFire.gameObject.SetActive(false);
-            enemyDamgeReceiverCtrl.ResetReceiver();*/
         }
         else
         {
-            CameraController.instance.Shake(TypeShake.Low);
-
             gameObject.SetActive(false);
             fxFire.gameObject.SetActive(true);
             enemyDamgeReceiverCtrl.ActiveReceiverBody();
@@ -69,6 +64,8 @@ public class EnemyDamageReceiver : DamageReceiver
         isDie = true;
         fxDie1.Play();
         fxDie2.Play();
+        FXSpawner.Instance.Spawn(PoolTag.Text_Dmg_Pop, transform.position, Quaternion.identity);
+
         yield return Yielders.Get(0.2f);
         this.enemyController.EnemyDespawn.DespawnObject();
         DropOnDead();

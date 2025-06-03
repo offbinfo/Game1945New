@@ -9,4 +9,6 @@ public enum ItemCode
     ShieldItem = 2,
     LevelUpItem = 3,
     MissileItem = 4,
+    MagenetItem = 5,
+    CoinItem = 6,
 }

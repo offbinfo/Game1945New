@@ -489,6 +489,7 @@ MonoBehaviour:
   fxDie1: {fileID: 1945544529179693435}
   fxDie2: {fileID: 8638241210240960818}
   enemyDamgeReceiverCtrl: {fileID: 0}
+  isBoss: 1
 --- !u!50 &4747902815449380701
 Rigidbody2D:
   serializedVersion: 4
@@ -671,7 +672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &706221601762195444
 Transform:
   m_ObjectHideFlags: 0

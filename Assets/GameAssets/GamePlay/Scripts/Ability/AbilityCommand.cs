@@ -82,3 +82,18 @@ public class LevelUpCommand : AbilityCommand
         shipController.ShipLevel.LevelUp();
     }
 }
+
+public class MagnetCommand : AbilityCommand
+{
+    private readonly ShipController shipController;
+
+    public MagnetCommand(ShipController shipController)
+    {
+        this.shipController = shipController;
+    }
+
+    public void Execute()
+    {
+        shipController.ShipLevel.LevelUp();
+    }
+}

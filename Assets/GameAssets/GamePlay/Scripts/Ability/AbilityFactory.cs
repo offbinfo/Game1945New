@@ -21,6 +21,7 @@ public class ConcreteAbilityFactory : AbilityFactory
             ItemCode.HealItem => new HealCommand(abilityController),
             ItemCode.MissileItem => new MissileCommand(abilityController),
             ItemCode.LevelUpItem => new LevelUpCommand(shipController),
+            ItemCode.MagenetItem => new MagnetCommand(shipController),
             _ => throw new ArgumentException("Invalid item code"),
         };
     }

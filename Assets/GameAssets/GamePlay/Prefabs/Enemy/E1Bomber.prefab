@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fb2ee1aad4c8a43b4db4a533a4d7cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: 20
+  _tag: 27
 --- !u!1 &4343090129500012402
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +328,8 @@ MonoBehaviour:
   shootTimer: 0
   startAngle: 270
   endAngle: 270
-  bulletAmount: 1
+  typeEnemyShoot: 0
+  shootChance: 0.7
 --- !u!1 &5419294358804282444
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +387,11 @@ MonoBehaviour:
   onDeadFXName: E1_Detruction
   isInvulnerable: 0
   enemyController: {fileID: 568686692282831538}
+  fxFire: {fileID: 0}
+  fxDie1: {fileID: 0}
+  fxDie2: {fileID: 0}
+  enemyDamgeReceiverCtrl: {fileID: 0}
+  isBoss: 0
 --- !u!70 &5717916963842095194
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -612,5 +618,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a7d9d937567ba2438204485cc096647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disLimit: 5
   distance: 0
+  pool: {fileID: 0}

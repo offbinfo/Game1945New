@@ -148,6 +148,7 @@ public abstract class UbhBaseShot : UbhMonoBehaviour
         {
             return;
         }
+        bullet.gameObject.SetActive(true);
         bullet.Shot(this,
                     speed, angle, m_accelerationSpeed, m_accelerationTurn,
                     homing, homingTarget, homingAngleSpeed,

@@ -85,7 +85,10 @@ public enum PoolTag
     Asteroid,
     NoItem,
     SparkExplosion,
+    Magnet_Item,
+    Coin_Item,
 
+    Text_Dmg_Pop,
 }
 
 public enum TypeShake

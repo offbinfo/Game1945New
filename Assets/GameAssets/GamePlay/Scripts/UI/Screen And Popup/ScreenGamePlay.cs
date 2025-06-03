@@ -69,12 +69,13 @@ public class ScreenGamePlay : UIPanel, IBoard
 
     public void SelectSkill1()
     {
-
+        DebugCustom.LogColor("SelectSkill1");
+        EventDispatcher.PostEvent(EventID.OnUsingSkill1, 0);
     }
 
     public void SelectSkill2()
     {
-
+        EventDispatcher.PostEvent(EventID.OnUsingSkill2, 0);
     }
 
     protected override void RegisterEvent()

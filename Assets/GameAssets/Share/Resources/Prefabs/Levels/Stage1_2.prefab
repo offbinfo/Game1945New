@@ -967,12 +967,14 @@ MonoBehaviour:
   - {fileID: 7061400894551769802}
   _formation: {fileID: 862280746457171557}
   currentState: 0
-  enemyName: 18
+  enemyName: 19
   _unitSpeed: 5
   typeSetUpWave: 3
+  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
   _unitFormationSpeed: 5
+  _unitFormationSpeedChangeWave: 2
 --- !u!1 &2477545963126072616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,12 +1336,14 @@ MonoBehaviour:
   - {fileID: 6081934897021609402}
   _formation: {fileID: 2108407526827261003}
   currentState: 0
-  enemyName: 18
+  enemyName: 19
   _unitSpeed: 5
   typeSetUpWave: 3
+  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
   _unitFormationSpeed: 5
+  _unitFormationSpeedChangeWave: 2
 --- !u!1 &3080740585944667084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,12 +1908,14 @@ MonoBehaviour:
   - {fileID: 2422945780916272600}
   _formation: {fileID: 9096373741597841948}
   currentState: 0
-  enemyName: 18
+  enemyName: 19
   _unitSpeed: 5
   typeSetUpWave: 3
+  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
   _unitFormationSpeed: 5
+  _unitFormationSpeedChangeWave: 2
 --- !u!1 &3781210411032212508
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,12 +3802,14 @@ MonoBehaviour:
   - {fileID: 4319573051026811426}
   _formation: {fileID: 5267354290195380136}
   currentState: 0
-  enemyName: 18
+  enemyName: 19
   _unitSpeed: 5
   typeSetUpWave: 3
+  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
   _unitFormationSpeed: 5
+  _unitFormationSpeedChangeWave: 2
 --- !u!1 &8391505003783764630
 GameObject:
   m_ObjectHideFlags: 0
@@ -3943,12 +3951,14 @@ MonoBehaviour:
   - {fileID: 1208965308758981516}
   _formation: {fileID: 7507875798893820267}
   currentState: 0
-  enemyName: 18
+  enemyName: 19
   _unitSpeed: 5
   typeSetUpWave: 3
+  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
   _unitFormationSpeed: 5
+  _unitFormationSpeedChangeWave: 2
 --- !u!1 &8455929695827453417
 GameObject:
   m_ObjectHideFlags: 0
@@ -4224,12 +4234,14 @@ MonoBehaviour:
   - {fileID: 3634717745621778000}
   _formation: {fileID: 790463285835901848}
   currentState: 0
-  enemyName: 18
+  enemyName: 19
   _unitSpeed: 5
   typeSetUpWave: 3
+  isMovePathFirstWave: 0
   delayChangeSetUp: 2
   amountOfUnit: 1
   _unitFormationSpeed: 5
+  _unitFormationSpeedChangeWave: 2
 --- !u!1 &8801068422346485126
 GameObject:
   m_ObjectHideFlags: 0

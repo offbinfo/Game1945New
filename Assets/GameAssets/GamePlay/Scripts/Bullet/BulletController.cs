@@ -15,6 +15,7 @@ public class BulletController : GameMonoBehaviour
     public Transform Shooter => shooter;
 
     public bool isSendDamage;
+    public bool test;
 
     [SerializeField]
     private Object_Pool pool;
@@ -38,6 +39,7 @@ public class BulletController : GameMonoBehaviour
 
     private void ShooterCheck()
     {
+        if (test) return;
         if (this.shooter == null || !this.shooter.gameObject.activeSelf)
         {
             BulletSpawner.Instance.Despawn(pool);

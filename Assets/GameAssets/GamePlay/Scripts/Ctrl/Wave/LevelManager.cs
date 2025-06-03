@@ -66,7 +66,7 @@ public class LevelManager : GameMonoBehaviour
 
     private void SetUpData()
     {
-        EventDispatcher.PostEvent(EventID.OnUpdateWave, 0);
+        //EventDispatcher.PostEvent(EventID.OnUpdateWave, 0);
         InstantiateWave("Prefabs/Levels/Stage"+ GameDatas.IndexLevel+"_"+ indexStage, transform);
     }
 
@@ -79,6 +79,7 @@ public class LevelManager : GameMonoBehaviour
             EndLevel();
             return;
         }
+        EventDispatcher.PostEvent(EventID.OnUpdateWave, 0);
         LevelWave levelWave = Instantiate(prefab, parent).GetComponent<LevelWave>();
         levelWave.transform.parent = parent;
         curStage = levelWave.gameObject;
@@ -134,11 +135,38 @@ public class LevelManager : GameMonoBehaviour
 
     public void StartLevel()
     {
+        StartCoroutine(DelayStartLevel());
+    }
+
+    private IEnumerator DelayStartLevel()
+    {
+        yield return Yielders.Get(2f);
         currentWaveIndex = 0;
         if (waveBoss != null)
         {
             waveBoss.StartWave();
-        } else
+        }
+        else
+        {
+            if (currentState == State.NotStarted)
+            {
+                if (waves.Count <= 0) yield break;
+                waves[currentWaveIndex].gameObject.SetActive(true);
+                waves[currentWaveIndex].StartRoomWave();
+                currentState = State.Started;
+            }
+        }
+        EventDispatcher.PostEvent(EventID.OnUpdateWave, 0);
+    }
+
+    private void NextStage()
+    {
+        currentWaveIndex = 0;
+        if (waveBoss != null)
+        {
+            waveBoss.StartWave();
+        }
+        else
         {
             if (currentState == State.NotStarted)
             {
@@ -159,13 +187,12 @@ public class LevelManager : GameMonoBehaviour
         CameraController.instance.ZoomOutSmooth();
         indexStage++;
         SetUpData();
-        StartLevel();
-
+        NextStage();
     }
 
     private void EndLevel()
     {
         currentState = State.Completed;
-        Board_UIs.instance.OpenBoard(UiPanelType.PopupWin);
+        Gm.OnWin();
     }
 }

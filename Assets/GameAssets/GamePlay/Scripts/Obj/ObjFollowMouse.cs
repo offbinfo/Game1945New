@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ObjFollowMouse : ObjMovement
 {
 
     private float deltaX, deltaY;
-    [SerializeField] private LayerMask movableLayers;
     private Transform dragging = null;
     private Vector3 offset;
 
@@ -27,14 +27,18 @@ public class ObjFollowMouse : ObjMovement
 
     private void Update()
     {
+        if(!Gm.isMoveShip) return;
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
+
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+                return;
+
             touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
             touchPosition.z = 0;
 
             direction = (touchPosition - transform.position).normalized;
-
             rb.velocity = direction * moveSpeed;
 
             if (touch.phase == TouchPhase.Ended)
@@ -43,30 +47,6 @@ public class ObjFollowMouse : ObjMovement
             }
         }
     }
-
-    /*private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
-                                                 float.PositiveInfinity, movableLayers);
-            if (hit)
-            {
-                isMoving = true;
-                dragging = hit.transform.parent;
-                offset = dragging.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            }
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            isMoving = false;
-        }
-
-        if (isMoving)
-        {
-            transform.parent.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
-        }
-    }*/
 
     protected override void GetTargetPosition()
     {

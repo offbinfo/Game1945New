@@ -1,9 +1,27 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ShipSubShooting : ShipShooting
 {
+
+    protected override void Start()
+    {
+        base.Start();
+        EventDispatcher.AddEvent(EventID.OnUsingSkill1, OnUsingSkill1);
+    }
+
+    private void OnUsingSkill1(object obj)
+    {
+        isShooting = true;
+        Invoke(nameof(DisableSkill), 4f);
+    }
+
+    private void DisableSkill()
+    {
+        isShooting = false;
+    }
 
     protected override void LoadBulletSound()
     {

@@ -12,7 +12,7 @@ public class RoomWave : WaveManager
     [SerializeField] private float _unitFormationSpeedChangeWave = 2f;
 
     private List<float> _unitOscillatesSpeeds = new List<float>();
-    private float amplitudeOscillates = 0.03f;
+    private float amplitudeOscillates = 0.5f;
     private bool isSetUpFormation;
 
     protected override void LoadComponents()
@@ -151,60 +151,143 @@ public class RoomWave : WaveManager
     }
 
     private bool movingToA = true;
+    private List<bool> movingToAList = new List<bool>();
+    private List<float> speedList = new List<float>();
+    private List<float> amplitudeOffsetList = new List<float>();
+    private List<float> timeOffsetList = new List<float>();
 
     private void FormationOscillatesX()
     {
         if (!this.isAllUnitInFormation) return;
-        bool isOscillatesX = true;
-        if (isOscillatesX)
+
+        float globalTime = Time.time;
+
+        while (movingToAList.Count < _spawnedUnits.Count)
         {
-            float maxX = this._formationPoints.Select(point => point.x).Max();
-            float minX = this._formationPoints.Select(point => point.x).Min();
-            float amplitudeMax = GameCtrl.Instance.M_maxX - maxX - 0.1f;
-            float amplitudeMin = GameCtrl.Instance.M_minX - minX + 0.1f;
+            movingToAList.Add(Random.value > 0.5f);
+            speedList.Add(Random.Range(0.1f, 0.5f));
+            amplitudeOffsetList.Add(Random.Range(0.5f, 1.5f)); 
+            timeOffsetList.Add(Random.Range(0f, 2f));
+        }
 
-            for (var i = 0; i < _spawnedUnits.Count; i++)
+        for (int i = 0; i < _spawnedUnits.Count; i++)
+        {
+            if (!isFollowPathDone[i]) continue;
+            if (globalTime < timeOffsetList[i]) continue;
+
+            Vector3 originalPos = _formationPoints[i];
+
+            float maxAllowedRight = GameCtrl.Instance.M_maxX - originalPos.x;
+            float maxAllowedLeft = originalPos.x - GameCtrl.Instance.M_minX;
+
+            float safeAmplitude = Mathf.Min(maxAllowedRight, maxAllowedLeft); 
+            float actualAmplitude = Mathf.Min(safeAmplitude, amplitudeOffsetList[i]); 
+
+            Vector3 pointA = new Vector3(originalPos.x + actualAmplitude, _spawnedUnits[i].transform.position.y, 0);
+            Vector3 pointB = new Vector3(originalPos.x - actualAmplitude, _spawnedUnits[i].transform.position.y, 0);
+
+            float speed = speedList[i];
+
+            if (movingToAList[i])
             {
-                if (!isFollowPathDone[i]) continue;
-
-                Vector3 pointA = new Vector3(this._formationPoints[i].x + amplitudeMax, this._spawnedUnits[i].transform.position.y, 0);
-                Vector3 pointB = new Vector3(this._formationPoints[i].x + amplitudeMin, this._spawnedUnits[i].transform.position.y, 0);
-                if (movingToA)
-                {
-                    this._spawnedUnits[i].transform.position = Vector3.MoveTowards(this._spawnedUnits[i].transform.position, pointA, Time.deltaTime * 0.05f);
-
-                    if (this._spawnedUnits[i].transform.position == pointA)
-                        movingToA = false;
-                }
-                else
-                {
-                    this._spawnedUnits[i].transform.position = Vector3.MoveTowards(this._spawnedUnits[i].transform.position, pointB, Time.deltaTime * 0.05f);
-
-                    if (this._spawnedUnits[i].transform.position == pointB)
-                        movingToA = true;
-                }
+                _spawnedUnits[i].transform.position = Vector3.MoveTowards(_spawnedUnits[i].transform.position, pointA, Time.deltaTime * speed);
+                if (_spawnedUnits[i].transform.position == pointA)
+                    movingToAList[i] = false;
+            }
+            else
+            {
+                _spawnedUnits[i].transform.position = Vector3.MoveTowards(_spawnedUnits[i].transform.position, pointB, Time.deltaTime * speed);
+                if (_spawnedUnits[i].transform.position == pointB)
+                    movingToAList[i] = true;
             }
         }
     }
+
+    /*    private void FormationOscillatesX()
+        {
+            if (!this.isAllUnitInFormation) return;
+            bool isOscillatesX = true;
+            if (isOscillatesX)
+            {
+                float maxX = this._formationPoints.Select(point => point.x).Max();
+                float minX = this._formationPoints.Select(point => point.x).Min();
+                float amplitudeMax = GameCtrl.Instance.M_maxX - maxX - 0.1f;
+                float amplitudeMin = GameCtrl.Instance.M_minX - minX + 0.1f;
+
+                for (var i = 0; i < _spawnedUnits.Count; i++)
+                {
+                    if (!isFollowPathDone[i]) continue;
+
+                    Vector3 pointA = new Vector3(this._formationPoints[i].x + amplitudeMax, this._spawnedUnits[i].transform.position.y, 0);
+                    Vector3 pointB = new Vector3(this._formationPoints[i].x + amplitudeMin, this._spawnedUnits[i].transform.position.y, 0);
+                    if (movingToA)
+                    {
+                        this._spawnedUnits[i].transform.position = Vector3.MoveTowards(this._spawnedUnits[i].transform.position, pointA, Time.deltaTime * 0.05f);
+
+                        if (this._spawnedUnits[i].transform.position == pointA)
+                            movingToA = false;
+                    }
+                    else
+                    {
+                        this._spawnedUnits[i].transform.position = Vector3.MoveTowards(this._spawnedUnits[i].transform.position, pointB, Time.deltaTime * 0.05f);
+
+                        if (this._spawnedUnits[i].transform.position == pointB)
+                            movingToA = true;
+                    }
+                }
+            }
+        }*/
+    /*    private float oscillatesYTimer = 0.0f;
+
+        protected virtual void FormationUnitOscillatesY()
+        {
+            if (!this.isAllUnitInFormation) return;
+            bool isOscillatesY = true;
+            if (isOscillatesY)
+            {
+                for (var i = 0; i < _spawnedUnits.Count; i++)
+                {
+                    if (!isFollowPathDone[i]) continue;
+
+                    float newY = _formationPoints[i].y + Mathf.PingPong(oscillatesYTimer * _unitOscillatesSpeeds[i], amplitudeOscillates * 2) - amplitudeOscillates;
+
+                    _spawnedUnits[i].transform.position = new Vector3(_spawnedUnits[i].transform.position.x, newY, 0);
+                }
+                this.oscillatesYTimer += Time.deltaTime;
+            }
+        }*/
+
     private float oscillatesYTimer = 0.0f;
+    private List<float> _unitYOffsetPhase = new();
 
     protected virtual void FormationUnitOscillatesY()
     {
         if (!this.isAllUnitInFormation) return;
+
         bool isOscillatesY = true;
         if (isOscillatesY)
         {
-            for (var i = 0; i < _spawnedUnits.Count; i++)
+            while (_unitYOffsetPhase.Count < _spawnedUnits.Count)
+            {
+                _unitYOffsetPhase.Add(Random.Range(0f, Mathf.PI * 2));
+            }
+
+            for (int i = 0; i < _spawnedUnits.Count; i++)
             {
                 if (!isFollowPathDone[i]) continue;
 
-                float newY = _formationPoints[i].y + Mathf.PingPong(oscillatesYTimer * _unitOscillatesSpeeds[i], amplitudeOscillates * 2) - amplitudeOscillates;
+                float targetY = _formationPoints[i].y + Mathf.Sin(oscillatesYTimer * _unitOscillatesSpeeds[i] + _unitYOffsetPhase[i]) * amplitudeOscillates;
 
-                _spawnedUnits[i].transform.position = new Vector3(_spawnedUnits[i].transform.position.x, newY, 0);
+                Vector3 currentPos = _spawnedUnits[i].transform.position;
+                Vector3 targetPos = new Vector3(currentPos.x, targetY, currentPos.z);
+
+                _spawnedUnits[i].transform.position = Vector3.Lerp(currentPos, targetPos, Time.deltaTime * 5f);
             }
-            this.oscillatesYTimer += Time.deltaTime;
+
+            oscillatesYTimer += Time.deltaTime;
         }
     }
+
 
     public void CheckOnAllUnitInFormation()
     {

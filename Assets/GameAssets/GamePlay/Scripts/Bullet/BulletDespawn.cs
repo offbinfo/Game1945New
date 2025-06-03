@@ -15,6 +15,9 @@ public class BulletDespawn : DespawnByDistance
 
     public override void DespawnObject()
     {
-        BulletSpawner.Instance.Despawn(pool);
+        if(pool != null)
+        {
+            BulletSpawner.Instance.Despawn(pool);
+        }
     }
 }

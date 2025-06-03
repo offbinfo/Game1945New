@@ -73,6 +73,11 @@ public class ScreenMainMenu : UIPanel, IBoard
         Board_UIs.instance.OpenBoard(UiPanelType.PopupSelectLevel);
     }
 
+    public void BtnShop()
+    {
+
+    }
+
     protected override void RegisterEvent()
     {
         base.RegisterEvent();

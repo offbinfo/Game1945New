@@ -27,15 +27,15 @@ public class BossWaveManager : WaveManager
 
     private void OnDisable()
     {
-        BossUIHealthBar.Instance.SetHealthBarActive(false);
+       // BossUIHealthBar.Instance.SetHealthBarActive(false);
     }
     private void LoadBossHealbar()
     {
-        DamageReceiver damageReceiver = this._spawnedUnits[0].GetComponentInChildren<DamageReceiver>();
+/*        DamageReceiver damageReceiver = this._spawnedUnits[0].GetComponentInChildren<DamageReceiver>();
         if (damageReceiver == null) return;
         BossUIHealthBar.Instance.SetDamageReceiver(damageReceiver);
         BossUIHealthBar.Instance.SetHealthBarActive(true);
-        Debug.Log("LoadBossHealbar");
+        Debug.Log("LoadBossHealbar");*/
     }
 
     protected override void LoadComponents()

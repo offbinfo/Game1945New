@@ -14,7 +14,6 @@ public class EnemyShootingBullet1 : EnemyShootingBullet
     protected override void Start()
     {
         base.Start();
-
         StartCoroutine(Shooting());
     }
 

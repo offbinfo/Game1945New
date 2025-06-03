@@ -107,12 +107,12 @@ public class ShipShooting : ShipAbstract
         int count = 0;
         int index = CalculateShootPointIndex();
         List<ShipPointInfo> shipPointInfo = bulletNames[index].Levels;
-/*        numberLaser = 0;
-        foreach (ShipPointInfo temp in shipPointInfo)
+        numberLaser = 0;
+/*        foreach (ShipPointInfo temp in shipPointInfo)
         {
             if (temp.Name == "Laser")
-                numberLaser++;    
-        }   */ 
+                numberLaser++;
+        }*/
         foreach (Transform shootPoint in shipShootPoints)
         {
             Vector3 spawnPos = shootPoint.position;
@@ -124,7 +124,7 @@ public class ShipShooting : ShipAbstract
             if (newBullet == null) return;
             this.SetDamage(newBullet.transform);
             newBullet.gameObject.SetActive(true);
-            //AudioManager.Instance.PlaySFX(bulletSoundName);
+
             BulletController bulletController = newBullet.GetComponent<BulletController>();
             bulletController.SetShooter(transform.parent);
 /*            if (bulletName != BulletSpawner.Instance.BulletThree)

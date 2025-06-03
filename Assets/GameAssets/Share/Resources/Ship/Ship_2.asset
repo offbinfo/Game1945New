@@ -36,9 +36,9 @@ MonoBehaviour:
       Rot: 5
   - Levels:
     - Name: 0
-      Rot: -4
+      Rot: -5
     - Name: 0
-      Rot: 4
+      Rot: 5
     - Name: 0
       Rot: -7
     - Name: 0
@@ -47,59 +47,51 @@ MonoBehaviour:
     - Name: 0
       Rot: 0
     - Name: 0
-      Rot: -4
+      Rot: -5
     - Name: 0
-      Rot: 4
+      Rot: 5
     - Name: 0
       Rot: -7
     - Name: 0
       Rot: 7
   - Levels:
     - Name: 0
-      Rot: -4
+      Rot: -1
     - Name: 0
-      Rot: 4
-    - Name: 0
-      Rot: -7
-    - Name: 0
-      Rot: 7
+      Rot: 1
     - Name: 0
       Rot: -10
     - Name: 0
       Rot: 10
-  - Levels:
     - Name: 0
-      Rot: 0
+      Rot: -12
     - Name: 0
-      Rot: -4
-    - Name: 0
-      Rot: 4
-    - Name: 0
-      Rot: -7
-    - Name: 0
-      Rot: 7
-    - Name: 0
-      Rot: -10
-    - Name: 0
-      Rot: 10
+      Rot: 12
   BulletSound: Ship2MainBullet
   subDamage: 10
-  subAttackSpeed: 2
+  subAttackSpeed: 0.25
   subBulletList:
   - Levels:
-    - Name: 0
-      Rot: 20
-    - Name: 0
-      Rot: -20
-  - Levels:
-    - Name: 0
-      Rot: 20
-    - Name: 0
-      Rot: -20
-    - Name: 0
-      Rot: 30
-    - Name: 0
-      Rot: -30
+    - Name: 1
+      Rot: -1
+    - Name: 1
+      Rot: 1
+    - Name: 1
+      Rot: -4
+    - Name: 1
+      Rot: 4
+    - Name: 1
+      Rot: -7
+    - Name: 1
+      Rot: 7
+    - Name: 1
+      Rot: -10
+    - Name: 1
+      Rot: 10
+    - Name: 1
+      Rot: -13
+    - Name: 1
+      Rot: 13
   SubBulletSound: Ship2SubBullet
   countDownSkill1: 25
   countDownSkill2: 25
