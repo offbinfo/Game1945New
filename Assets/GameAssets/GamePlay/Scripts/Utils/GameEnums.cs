@@ -28,9 +28,7 @@ public enum ExecutionMode
 public enum TypeWave
 {
     Short,   
-    Long,
-    Support,
-    Boss
+    Long
 }
 
 public enum TypeEnemyShoot

@@ -8,6 +8,7 @@ public class LevelWave : GameMonoBehaviour
     public List<FormationWaveManager> waves;
     public WaveManager waveBoss;
 
+    [Title("=========Button===========")]
     [Button("Async Stage")]
     public void AsyncStage()
     {
@@ -16,6 +17,7 @@ public class LevelWave : GameMonoBehaviour
             if(transform.GetChild(i).GetComponent<FormationWaveManager>() != null)
             {
                 waves.Add(transform.GetChild(i).GetComponent<FormationWaveManager>());
+                waves[i].AsyncFormationWave();
             }
         }
         if (transform.GetComponentInChildren<BossWaveManager>() != null)

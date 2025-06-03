@@ -17,14 +17,17 @@ public class FormationWaveManager : GameMonoBehaviour
 
     public List<RoomWave> roomWaves;
     public List<RoomWaveLong> roomWaveLongs;
+
+    [Header("SetUp Room Category")]
+    [SerializeField]
+    private TypeWave typeWave;
     [SerializeField]
     private ExecutionMode executionMode;
     [SerializeField]
-    private float delayStartWaveNext;
-    [SerializeField]
-    private TypeWave typeWave;
+    [ShowIf(nameof(IsSequentialRoom))] private float delayStartWaveNext;
 
-    [Button("AsyncFormationWave")]
+    private bool IsSequentialRoom => executionMode == ExecutionMode.Sequential;
+
     public void AsyncFormationWave()
     {
         roomWaves.Clear();
@@ -69,12 +72,6 @@ public class FormationWaveManager : GameMonoBehaviour
                         }
                     }
                 }
-                break;
-            case TypeWave.Support:
-
-                break;
-            case TypeWave.Boss:
-
                 break;
         }
     }
