@@ -14,8 +14,9 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class FormationWaveManager : GameMonoBehaviour
 {
-
+    [FoldoutGroup("WAVE SHORT", expanded: true)]
     public List<RoomWave> roomWaves;
+    [FoldoutGroup("WAVE LONG", expanded: true)]
     public List<RoomWaveLong> roomWaveLongs;
 
     [Header("SetUp Room Category")]
@@ -35,10 +36,18 @@ public class FormationWaveManager : GameMonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             roomWaves.Add(transform.GetChild(i).GetComponent<RoomWave>());
+            if(roomWaves[i] != null)
+            {
+                roomWaves[i].AddDataSubRoom();
+            }
         }
         for (int i = 0; i < transform.childCount; i++)
         {
             roomWaveLongs.Add(transform.GetChild(i).GetComponent<RoomWaveLong>());
+            if (roomWaveLongs[i] != null)
+            {
+                roomWaveLongs[i].AddDataSubRoom();
+            }
         }
     }
 
@@ -61,6 +70,7 @@ public class FormationWaveManager : GameMonoBehaviour
                     {
                         foreach (RoomWave roomWave in roomWaves)
                         {
+                            roomWave.gameObject.SetActive(true);
                             roomWave.StartWave();
                         }
                     }
@@ -68,6 +78,7 @@ public class FormationWaveManager : GameMonoBehaviour
                     {
                         foreach (RoomWaveLong roomWave in roomWaveLongs)
                         {
+                            roomWave.gameObject.SetActive(true);
                             roomWave.StartWave();
                         }
                     }
@@ -83,6 +94,7 @@ public class FormationWaveManager : GameMonoBehaviour
             if (i > 0)
                 yield return Yielders.Get(delayStartWaveNext);
 
+            roomWaveLongs[i].gameObject.SetActive(true);
             roomWaveLongs[i].StartWave();
         }
     }
@@ -94,6 +106,7 @@ public class FormationWaveManager : GameMonoBehaviour
             if (i > 0)
                 yield return Yielders.Get(delayStartWaveNext);
 
+            roomWaves[i].gameObject.SetActive(true);
             roomWaves[i].StartWave();
         }
     }

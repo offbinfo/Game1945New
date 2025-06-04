@@ -50,7 +50,6 @@ public class ScreenGamePlay : UIPanel, IBoard
 
     private void UpdateTextWave(object o)
     {
-        DebugCustom.LogColor("UpdateTextWave");
         StartCoroutine(DelayActiveTxtWave());
     }
 

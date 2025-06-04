@@ -78,8 +78,6 @@ public class Spawner : GameMonoBehaviour
 
     protected virtual Object_Pool GetPrefabByName(PoolTag prefabName)
     {
-        DebugCustom.LogColor("GetPrefabByName "+ prefabName);
-        DebugCustom.LogColor("prefabs " + prefabs.Find(prefab => prefab._tag == prefabName));
         return prefabs.Find(prefab => prefab._tag == prefabName);
     }
 

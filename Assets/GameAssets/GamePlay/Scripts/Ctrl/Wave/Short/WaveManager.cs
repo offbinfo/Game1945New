@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,12 +21,8 @@ public class WaveManager : GameMonoBehaviour
     [SerializeField] protected FormationBase _formation;
 
     [Space]
-    [SerializeField] protected State currentState;
-    public State CurrentState => currentState;
-
-    [Space]
     [SerializeField] protected PoolTag enemyName;
-    [SerializeField] private float _unitSpeed = 2f;
+    [SerializeField] private float _unitSpeedMovePath = 2f;
 
     [Space]
     [Header("SetUp Formation")]
@@ -36,13 +33,12 @@ public class WaveManager : GameMonoBehaviour
 
     protected int curIndexRoom = 0;
     [SerializeField]
-    protected float delayChangeSetUp;
+    protected float timeDelayChangeRoom;
     protected List<float> distanceTravelled = new List<float>();
     protected List<bool> isFollowPathDone = new List<bool>();
 
     protected bool isWaveSpawnComplete = false;
     protected bool isAllSpawnedUnitsDead = false;
-    [SerializeField]
     protected int amountOfUnit = 1;
     protected bool isMovePath;
     protected bool isAllUnitInFormation = false;
@@ -70,23 +66,30 @@ public class WaveManager : GameMonoBehaviour
     {
         base.LoadComponents();
     }
-    private void LoadPaths()
-    {
-        if (_paths.Count > 0) _paths.Clear();
-        Transform prefabsObj = transform.Find("MovePaths");
-        foreach (Transform prefab in prefabsObj)
-        {
-            this._paths.Add(prefab.GetComponent<PathCreator>());
-        }
-        Debug.Log(transform.name + ": LoadPrefabs", gameObject);
-    }
 
     protected virtual void CheckOnWaveCompleted()
     {
-        if (this.currentState == State.NotStarted) return;
+        //if (this.currentState == State.NotStarted) return;
         if (!this.isWaveSpawnComplete) return;
         if (!this.isAllSpawnedUnitsDead) return;
-        this.currentState = State.Completed;
+        //this.currentState = State.Completed;
+    }
+
+    public void AddDataSubRoom()
+    {
+        _subRoom.Clear();
+        _paths.Clear();
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            _subRoom.Add(transform.GetChild(i).GetComponent<SubRoom>());
+            _subRoom[i].LoadPaths();
+        }
+        for (int i = 0; i < _subRoom[0].paths.Count; i++)
+        {
+            _paths.Add(_subRoom[0].paths[i]);
+        }
+        _formation = _subRoom[0].Formation;
     }
 
     public virtual void StartWave()
@@ -178,18 +181,6 @@ public class WaveManager : GameMonoBehaviour
 
             LevelManager.Instance.totalEnemy++;
         }
-        /*        Vector3 spawnPos = movePath.path.GetPoint(0);
-                Quaternion enemyRot = Quaternion.Euler(0, 0, 0);
-                *//*Transform*//*
-                newEnemy = EnemySpawner.Instance.Spawn(enemyName, spawnPos, enemyRot);
-                if (newEnemy == null) return false;
-                if (!this._spawnedUnits.Contains(newEnemy))
-                {
-                    this._spawnedUnits.Add(newEnemy);
-                    this.distanceTravelled.Add(0);
-                    this.isFollowPathDone.Add(false);
-                }
-                newEnemy.gameObject.SetActive(true);*/
 
         if (isMovePathFirstWave)
         {
@@ -203,7 +194,6 @@ public class WaveManager : GameMonoBehaviour
             }
             hasFormationCompleted = true;
         }
-        //StartCoroutine(MoveOnPath(newEnemy, movePath));
         return true;
     }
 
@@ -256,7 +246,7 @@ public class WaveManager : GameMonoBehaviour
 
         while (!isFollowPathDone[index])
         {
-            distanceTravelled[index] += _unitSpeed * Time.deltaTime;
+            distanceTravelled[index] += _unitSpeedMovePath * Time.deltaTime;
             Vector3 pathPos = path.path.GetPointAtDistance(distanceTravelled[index], EndOfPathInstruction.Loop);
             unit.transform.position = pathPos;
 

@@ -7,9 +7,10 @@ using UnityEngine;
 
 public class RoomWave : WaveManager
 {
-    [SerializeField] private float _unitFormationSpeed = 2f;
     private List<Vector3> _formationPoints;
-    [SerializeField] private float _unitFormationSpeedChangeWave = 2f;
+    [Space]
+    [SerializeField] private float _unitFormationSpeed = 2f;
+    [SerializeField] private float _unitFormationSpeedChangeRoom = 2f;
 
     private List<float> _unitOscillatesSpeeds = new List<float>();
     private float amplitudeOscillates = 0.5f;
@@ -128,7 +129,7 @@ public class RoomWave : WaveManager
                 _spawnedUnits[i].transform.position = Vector3.MoveTowards(
                     _spawnedUnits[i].transform.position,
                     _formationPoints[i],
-                    _unitFormationSpeedChangeWave * Time.deltaTime
+                    _unitFormationSpeedChangeRoom * Time.deltaTime
                 );
             }  else
             {
@@ -334,7 +335,7 @@ public class RoomWave : WaveManager
     private IEnumerator ChangeToNextWave()
     {
         isMovePath = true;
-        yield return new WaitForSeconds(delayChangeSetUp);
+        yield return new WaitForSeconds(timeDelayChangeRoom);
 
         curIndexRoom++;
         if (curIndexRoom >= _subRoom.Count)
@@ -362,7 +363,7 @@ public class RoomWave : WaveManager
             isFollowPathDone[i] = false;
         }
 
-        this.currentState = State.NotStarted;
+        //this.currentState = State.NotStarted;
         // Start next wave
         StartWave();
     }
@@ -370,7 +371,7 @@ public class RoomWave : WaveManager
     private IEnumerator ChangeToFormation()
     {
         isMovePath = true;
-        yield return new WaitForSeconds(delayChangeSetUp);
+        yield return new WaitForSeconds(timeDelayChangeRoom);
 
         curIndexRoom++;
         if (curIndexRoom >= _subRoom.Count)

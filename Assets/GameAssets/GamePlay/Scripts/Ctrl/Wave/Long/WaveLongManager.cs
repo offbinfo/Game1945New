@@ -20,9 +20,8 @@ public class WaveLongManager : GameMonoBehaviour
     public State CurrentState => currentState;
 
     [Space]
-    [SerializeField] protected string enemyName = "no-name";
+    [SerializeField] protected PoolTag enemyName = PoolTag.Enemy1;
     [SerializeField] private float _unitSpeed = 2f;
-    [SerializeField] private Transform holder;
 
     [Space]
     [Header("SetUp Formation")]
@@ -34,9 +33,15 @@ public class WaveLongManager : GameMonoBehaviour
     protected List<float> distanceTravelled = new List<float>();
     protected List<bool> isFollowPathDone = new List<bool>();
 
+    [Space]
+    [Header("Total Enemy Room (điền khi room không có formation)")]
+    [SerializeField]
+    protected int amountOfUnit = 1;
+/*    [SerializeField]
+    protected bool isMovePathFirstWave;*/
+
     protected bool isWaveSpawnComplete = false;
     protected bool isAllSpawnedUnitsDead = false;
-    protected int amountOfUnit = 1;
     protected bool isMovePath;
     protected bool isAllUnitInFormation = false;
     protected bool hasFormationCompleted = false;
@@ -63,15 +68,21 @@ public class WaveLongManager : GameMonoBehaviour
     {
         base.LoadComponents();
     }
-    private void LoadPaths()
+    public void AddDataSubRoom()
     {
-        if (_paths.Count > 0) _paths.Clear();
-        Transform prefabsObj = transform.Find("MovePaths");
-        foreach (Transform prefab in prefabsObj)
+        _subRoom.Clear();
+        _paths.Clear();
+
+        for (int i = 0; i < transform.childCount; i++)
         {
-            this._paths.Add(prefab.GetComponent<PathCreator>());
+            _subRoom.Add(transform.GetChild(i).GetComponent<SubRoom>());
+            _subRoom[i].LoadPaths();
         }
-        Debug.Log(transform.name + ": LoadPrefabs", gameObject);
+        for (int i = 0; i < _subRoom[0].paths.Count; i++)
+        {
+            _paths.Add(_subRoom[0].paths[i]);
+        }
+        _formation = _subRoom[0].Formation;
     }
 
     protected virtual void CheckOnWaveCompleted()
@@ -145,7 +156,10 @@ public class WaveLongManager : GameMonoBehaviour
     {
         Vector3 spawnPos = movePath.path.GetPoint(0);
         Quaternion enemyRot = Quaternion.Euler(0, 0, 0);
-        Object_Pool newEnemy = EnemySpawner.Instance.Spawn(PoolTag.Enemy1, spawnPos, enemyRot, holder);
+        Object_Pool newEnemy = EnemySpawner.Instance.Spawn(enemyName, spawnPos, enemyRot, transform);
+
+        newEnemy.transform.parent = transform;
+
         if (newEnemy == null) return false;
         if (!this._spawnedUnits.Contains(newEnemy))
         {
@@ -156,7 +170,7 @@ public class WaveLongManager : GameMonoBehaviour
         newEnemy.gameObject.SetActive(true);
         LevelManager.Instance.totalEnemy++;
 
-        if (typeSetUpWave == TypeSetUpWaveEnd.PathToEnd)
+        if (_formation == null)
         {
             StartCoroutine(MoveOnPath(newEnemy, movePath));
         }
@@ -303,6 +317,7 @@ public class WaveLongManager : GameMonoBehaviour
         if (isFollowPathDone.All(done => done))
         {
             hasFormationCompleted = true;
+            DebugCustom.LogColor("Test");
 
             OnFormationCompleted();
         }

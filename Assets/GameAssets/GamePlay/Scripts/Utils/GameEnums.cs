@@ -8,9 +8,7 @@ public enum TypeSetUpWaveEnd
     Loop,
     ChangeWaveUsingPath,
     ChangeWave,
-    PathToPath,
-    PathToEnd,
-    WaveToEnd,
+    PathToPath
 }
 
 public enum TypeSetUpWaveStart

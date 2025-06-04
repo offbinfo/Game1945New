@@ -3,17 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDespawn : DespawnByDistance
+public class EnemyDespawn : DespawnByLimit
 {
-    /*    [SerializeField] protected List<IObjDespawnObsever> obsevers = new List<IObjDespawnObsever>();
-
-        private void OnDespawnObject()
-        {
-            foreach (var obj in obsevers)
-            {
-                obj.OnDespawnObject();
-            }
-        }*/
 
     [SerializeField]
     private Object_Pool pool;
@@ -24,17 +15,11 @@ public class EnemyDespawn : DespawnByDistance
         pool = GetComponentInParent<Object_Pool>();
     }
 
-
     public override void DespawnObject()
     {
-        //this.OnDespawnObject();
         EnemySpawner.Instance.Despawn(pool);
         EventDispatcher.PostEvent(EventID.OnKillEnemy, 0);
+        this.isLimit = false;
     }
-    
-/*
-    public virtual void ObseverAdd(IObjDespawnObsever obsever)
-    {
-        this.obsevers.Add(obsever);
-    }*/
+   
 }
